@@ -7,8 +7,15 @@
 <body>
 	<%- partials.header %>
 	<%- partials.aside %>
-	<div style="width: 100%; height: calc(100% - 80px);">
-		<video controls="true" src="videos/sample.mp4"></video>
+	<div class="full-page" cpk-page="show_list">
+		
+	</div>
+	<div class="full-page" cpk-page="video_player" style="display: none">
+		<div class="video_container">
+			<video controls="true">
+				<source src="videos/Used_Buried-Myself-Alive.mp4" type="video/mp4">
+			</video>
+		</div>
 	</div>
 </body>
 </html>

@@ -75,5 +75,9 @@ var server = app.listen(app.get('port'), function() {
 });
 console.log('Application available at port: ' + app.get('port'));
 
+//INITIALIZE GLOBAL CACHE
+var NodeCache = require( "node-cache" );
+global.default_cache = new NodeCache();
+
 //THIS TELLS NODE TO EXPORT THIS MODULE. SINCE IT IS THE ROOT MODULE, IT WILL FUNCTION AS ENTRY POINT TO SERVER
 module.exports = app;

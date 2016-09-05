@@ -5,10 +5,10 @@ var partials = require('../controllers/ejs_partials');
 /* GET home page. */
 router.get('/', function(req, res) {
 	partials.get_partials(function(data) {
-		console.log('success');
 		res.render('index', {partials: data});
 	}, function(err) {
-		console.log('error');
+		console.log('Error retrieving partials');
+		console.dir(err);
 		res.send(err);
 	});
 });

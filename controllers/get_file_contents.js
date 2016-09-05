@@ -2,7 +2,11 @@ var express = require('express');
 var fs = require('fs');
 var path = require('path');
 
-module.exports.retrieve = function(data, callback, error) {
+var groups = {
+	partials: true
+}
+
+module.exports.by_group = function(data, callback, error) {
 	if (data.group == null) {
 		error('Group not provided');
 	} else if (data.file == null) {
@@ -32,6 +36,12 @@ module.exports.retrieve = function(data, callback, error) {
 	}
 }
 
-var groups = {
-	partials: true
+module.exports.by_path = function(path, callback, error) {
+	fs.readFile(path, function(err, rslt) {
+		if (err) {
+			error(err);
+		} else {
+			callback(String(rslt));
+		}
+	})
 }

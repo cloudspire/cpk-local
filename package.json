@@ -17,8 +17,13 @@
     "fs": "0.0.1-security",
     "moment": "^2.14.1",
     "morgan": "^1.7.0",
+    "node-cache": "^3.2.1",
     "path": "^0.12.7",
     "serve-favicon": "^2.3.0",
     "underscore": "^1.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloudspire/cpk-local.git"
   }
 }
