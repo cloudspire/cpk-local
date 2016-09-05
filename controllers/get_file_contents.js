@@ -1,0 +1,37 @@
+var express = require('express');
+var fs = require('fs');
+var path = require('path');
+
+module.exports.retrieve = function(data, callback, error) {
+	if (data.group == null) {
+		error('Group not provided');
+	} else if (data.file == null) {
+		error('Path not provided');
+	} else if (!groups[data.group]) {
+		error('Invalid group');
+	} else {
+		var path = "";
+		switch (data.group) {
+			case "partials":
+				path = "./view_engine/partials/" + data.file;
+				break;
+			default:
+				break;
+		}
+		if (path == "") {
+			error('Error finding group path');
+		} else {
+			fs.readFile(path, function(err, rslt) {
+				if (err) {
+					error(err);
+				} else {
+					callback(String(rslt));
+				}
+			})
+		}
+	}
+}
+
+var groups = {
+	partials: true
+}

@@ -1,0 +1,24 @@
+{
+  "name": "vidstream",
+  "version": "1.0.0",
+  "description": "Internal video streamer for localhost",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "stop": "pkill --signal SIGINT vidstream"
+  },
+  "author": "Cloudspire",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "debug": "^2.2.0",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "moment": "^2.14.1",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3"
+  }
+}
