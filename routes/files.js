@@ -4,8 +4,8 @@ var partials = require('../controllers/ejs_partials');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-	partials.video_partials(function(data) {
-		res.render('index', {partials: data});
+	partials.files_partials(function(data) {
+		res.render('files', {partials: data});
 	}, function(err) {
 		console.log('Error retrieving partials');
 		console.dir(err);

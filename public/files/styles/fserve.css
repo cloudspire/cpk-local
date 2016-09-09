@@ -1,0 +1,14 @@
+.upload-btn {
+  color: white;
+  background-color: #C12525;
+  border: none;
+}
+
+.upload-btn:hover,
+.upload-btn:focus,
+.upload-btn:active,
+.upload-btn.active {
+  color: white;
+  background-color: #9C1F1F;
+  border: none;
+}

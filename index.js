@@ -31,9 +31,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Load Middleware Functions
 var home = require('./routes/index');
+var video_list = require('./routes/video_list');
+var file_server = require('./routes/files');
+var files_list = require('./routes/files_list');
+
+//Load file-server routes
+app.use('/files/upload/videos', require('./routes/upload/video'));
+app.use('/files/upload/pictures', require('./routes/upload/pictures'));
+app.use('/files/upload/documents', require('./routes/upload/documents'));
+app.use('/files/upload/music', require('./routes/upload/music'));
 
 //Route Paths to Middleware
 app.use('/', home);
+app.use('/video_list', video_list);
+app.use('/files', file_server);
+app.use('/files/files_list', files_list);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -78,6 +90,10 @@ console.log('Application available at port: ' + app.get('port'));
 //INITIALIZE GLOBAL CACHE
 var NodeCache = require( "node-cache" );
 global.default_cache = new NodeCache();
+global.cache_flags = {
+    partials: false
+}
+global.fs_root_dir = path.join(__dirname, '/private/files/dir/');
 
 //THIS TELLS NODE TO EXPORT THIS MODULE. SINCE IT IS THE ROOT MODULE, IT WILL FUNCTION AS ENTRY POINT TO SERVER
 module.exports = app;

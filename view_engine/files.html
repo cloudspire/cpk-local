@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CPK Files | Transfer files to and from your server</title>
+	<%- partials.meta %>
+</head>
+<body>
+	<%- partials.header %>
+	<%- partials.aside %>
+	<div class="container">
+		<div class="row" style="margin: 15px 0px;">
+			<div class="col-xs-12">
+				<div class="pull-right">
+					<button class="btn upload-btn" type="button">Upload Files</button>
+				</div>
+			</div>
+		</div>
+  		<input id="upload-input" type="file" name="uploads[]" multiple="multiple" style="display: none;"></br>
+	</div>
+	<div class="full-page" cpk-page="videos">
+		
+	</div>
+	<div class="full-page" cpk-page="pictures" style="display: none;">
+		
+	</div>
+	<div class="full-page" cpk-page="documents" style="display: none;">
+		
+	</div>
+	<div class="full-page" cpk-page="music" style="display: none;">
+		
+	</div>
+</body>
+</html>
