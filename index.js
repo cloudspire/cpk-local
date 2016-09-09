@@ -31,9 +31,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Load Middleware Functions
 var home = require('./routes/index');
-var video_list = require('./routes/video_list');
 var file_server = require('./routes/files');
 var files_list = require('./routes/files_list');
+var video_server = require('./routes/video');
+var video_list = require('./routes/video_list');
 
 //Load file-server routes
 app.use('/files/upload/videos', require('./routes/upload/video'));
@@ -43,9 +44,10 @@ app.use('/files/upload/music', require('./routes/upload/music'));
 
 //Route Paths to Middleware
 app.use('/', home);
-app.use('/video_list', video_list);
 app.use('/files', file_server);
 app.use('/files/files_list', files_list);
+app.use('/video', video_server);
+app.use('/video/video_list', video_list);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

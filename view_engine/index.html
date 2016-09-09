@@ -1,25 +1,337 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>CPK Local | Stream videos from your hard drive!</title>
-	<%- partials.meta %>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CPK Browser - Search Movies and TV Shows</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Favicons for all devices -->
+	<link rel="shortcut icon" href="../images/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../images/favicons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="../images/favicons/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="../images/favicons/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="../images/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="../images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="../images/favicons/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#ff0000"></meta>
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png"></meta>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link href='styles/wrapper.min.css' rel='stylesheet' type='text/css'>
+	<link href='styles/jquery.mCustomScrollbar.min.css' rel='stylesheet' type='text/css'>
+	<link href='styles/cpk_framework.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link href='https://code.jquery.com/ui/1.10.4/themes/ui-darkness/jquery-ui.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Sans&amp;subset=latin,latin-ext">
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<script type="text/javascript" src="scripts/jquery.mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="scripts/simplyScroll.min.js"></script>
+	<script type="text/javascript" src="scripts/server_config.min.js"></script>
+	<script type="text/javascript" src="scripts/cpk_framework.min.js"></script>
+	<script type="text/javascript" src="scripts/sockets.min.js"></script>
+	<script type="text/javascript" src="scripts/main.min.js"></script>
+	<script src="http://cpk-api.herokuapp.com/socket.io/socket.io.js"></script>
+	<!-- <script src="http://localhost:3000/socket.io/socket.io.js"></script> -->
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-75848330-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script>
+		
+	</script>
 </head>
 <body>
-	<%- partials.header %>
-	<%- partials.aside %>
-	<div class="full-page" cpk-page="show_list">
-		<div style="text-align: center;">
-			<div id="vidlist" class="container">
-				
+	<input type="hidden" cpk-control="config" cpk-config="plugin=primewire,type=mixed,root=http://primewire.ag" />
+	<header class="header-two-bars">	
+		<div class="header-first-bar">
+			<div class="header-limiter">
+				<div id="toggleMenuSide" class="options_button"  onclick="toggleAside();">
+					<i id="btn-opts" class="fa fa-bars"></i>
+				</div>
+				<h1><a href="http://video.cpkbrowser.com">CPK<span style="margin-left: 5px;">Browser</span></a></h1>
+				<div class="options_button add_content_bin" style="display: none;" data-toggle="tooltip" title="Add a Video Group" onclick="cpk.event_handlers.add_content_bin();">
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="search_sample" cpk-control="search" cpk-config="source=search_mixed">
+					<i class="fa fa-search"></i>
+				</div>
+				<input id="search_mixed" class="search_box_sample" type="text" placeholder="Try me!"/>
 			</div>
 		</div>
-	</div>
-	<div class="full-page" cpk-page="video_player" style="display: none">
-		<div class="video_container">
-			<video id="vid_player" controls="true">
-				<source id="vid_src" type="video/mp4">
-			</video>
+		<div id="progressbar" class="pgbr" style="height: 4px; border: none;"></div>
+		<div class="header-second-bar" style="display: none;">
+			
+		</div>
+	</header>
+	<aside style="display: none;">
+		<div class="container" style="max-width: 300px; padding: 0;">
+			<nav>
+				<div class="selected"><div class="select-type-btn" element-type="aside_tab" element-index="0">Navigate</div></div>
+				<div><div id="loginBtnBug" class="select-type-btn" element-type="aside_tab" element-index="1">User</div></div>
+				<div><div class="select-type-btn last" element-type="aside_tab" element-index="2">Video</div></div>
+			</nav>
+			<div id="aside_details">
+				<div style="clear:both;" element-type="aside_block" element-index="0">
+					<div class="row menu_row">
+						<div class="login">
+							<div class="menu_value text-center" onclick="cpk.top_shows.init();">Top Shows</div>	
+						</div>
+						<div id="toggleMinimal" class="menu_value text-center">Minimize Header</div>
+					</div>
+					<div id="show_srch_results" class="row menu_row" style="display: none;">
+						<div class="login">
+							<div class="menu_value text-center" onclick="cpk.event_handlers.show_srch_results();">Search Results</div>	
+						</div>
+					</div>
+					<div id="show_show_results" class="row menu_row" style="display: none;">
+						<div class="login">
+							<div class="menu_value text-center" onclick="cpk.event_handlers.show_show_results();"></div>	
+						</div>
+					</div>
+					<div id="show_video_player" class="row menu_row" style="display: none;">
+						<div class="login">
+							<div class="menu_value text-center" onclick="cpk.event_handlers.show_video_player();"></div>	
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;" element-type="aside_block" element-index="1" style="display: none;">
+					<div id="loginBug" class="row menu_row" style="display: none;">
+						<div class="login">
+							<div id="user_name" class="menu_value text-center" onclick="$('#login_form').slideToggle();">Login</div>	
+						</div>
+					</div>
+					<div id="login_form" class="login-form" style="display: none;">
+						<div class="form-group">
+						  <input type="text" class="form-control" id="usr" placeholder="Username">
+						</div>
+						<div class="form-group">
+						  <input type="password" class="form-control" id="pwd" placeholder="Password">
+						</div>
+						<button class="btn btn-primary btn-block" onclick="cpk.api.login();">Login</button>
+						<p class="new-user"><a href="http://www.cpkbrowser.com/#signupStep1">Not a user yet?, Signup Now!</a></p>
+					</div>
+					<div id="show_user_dashboard" class="row menu_row" style="display: none;">
+						<div class="login">
+							<div class="menu_value text-center" onclick="cpk.event_handlers.show_user_dashboard();">Dashboard</div>	
+						</div>
+					</div>
+					<div id="show_video_groups" class="row menu_row" style="display: none;">
+						<div class="login">
+							<div class="menu_value text-center" onclick="cpk.event_handlers.show_video_groups();">Video Groups</div>	
+						</div>
+					</div>
+					<div id="show_recently_watched" class="row menu_row" style="display: none;">
+						<div class="login">
+							<div class="menu_value text-center" onclick="cpk.event_handlers.show_recently_watched();">Recently Watched</div>	
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;" element-type="aside_block" element-index="2" style="display: none; margin-top: 50px;">
+					<div id="partner_buttons" class="row menu_row" style="display: none;">
+						<div style="width: 45%; display: inline-block; margin-left: 15px;">
+							<span class="menu_key">Partner:</span>
+						</div>
+						<div style="width: 45%; display: inline-block;">
+							<span id="choose_partner" class="menu_value" onclick="cpk.event_handlers.open_partner_interface();">connect</span>
+						</div>
+					</div>
+					<div id="partner_form" class="partner-form" style="display: none;">
+						<div id="device_name">
+							<div class="form-group">
+							  <label for="dvcnm">Name:</label>
+							  <input type="text" class="form-control active-color" id="dvcnm">
+							</div>
+							<button class="btn btn-primary btn-block" onclick="cpk.event_handlers.choose_device_name();">Select</button>
+						</div>	
+						<div id="partner_devices" class="partner-wrap">
+							<div class="form-group device_labels">
+							  <label for="my_dvcnm">My Device:</label>
+							  <span id="my_dvcnm" class="active-color"></span>
+							</div>
+							<div class="form-group device_labels">
+							  <label for="partners">Partners:</label>
+							  <ul id="partners" class="active-color"></ul>
+							</div>
+						</div>
+					</div>
+					<div id="show_controller" class="container" style="padding-top: 15px; max-width: 300px; display: none;">
+						<div class="row menu_row">
+							<div style="width: 90%; display: inline-block; margin-left: 15px; border-bottom: 1px solid white;">
+								<span class="menu_key">Remote</span>
+							</div>
+						</div>
+						<div id="next_link_container" class="row menu_row">
+							<div style="width: 20%; text-align: right; display: inline-block;">
+								<i class="fa fa-step-backward"></i>
+							</div>
+							<div style="width: 50%; text-align: center; display: inline-block; padding-left: 10px;">
+								<span class="menu_value" style="cursor: default;">Link</span>
+							</div>
+							<div style="width: 20%; text-align: left; display: inline-block;">
+								<i class="fa fa-step-forward"></i>
+							</div>
+						</div>
+						<div id="next_episode_container" class="row menu_row">
+							<div style="width: 20%; text-align: right; display: inline-block;">
+								<i class="fa fa-fast-backward"></i>
+							</div>
+							<div style="width: 50%; text-align: center; display: inline-block; padding-left: 10px;">
+								<span class="menu_value" style="cursor: default;">Episode</span>
+							</div>
+							<div style="width: 20%; text-align: left; display: inline-block;">
+								<i class="fa fa-fast-forward"></i>
+							</div>
+						</div>
+						<div id="btn_send_partner" class="row menu_row">
+							<div style="width: 90%; text-align: center; display: inline-block;">
+								<span class="menu_value" style="cursor: pointer;">Send to Partner</span>
+							</div>
+						</div>
+						<div class="row menu_row">
+							<div style="width: 90%; display: inline-block; margin-left: 15px; border-bottom: 1px solid white; margin-top: 15px;">
+								<span class="menu_key">Select Source</span>
+							</div>
+						</div>
+						<div class="row menu_row">
+							<div class="sources_list">
+								<ul class="source_pager">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<div class="admin-panel">
+		<div cpk-control="top_shows" class="top_shows_panel">
+			<div class="container top_show_container">
+				<div class="row">
+					<div class="col-md-6 ts_container">
+						<span class="top_show_heading"> In Theaters</span>
+						<ul id="ls_theater_pager" class="nav nav-pills"></ul>
+						<div id="ls_theater"></div>
+					</div>
+					<div class="col-md-6 ts_container dvd-container">
+						<span class="top_show_heading">New DVDs</span>
+						<ul id="ls_dvd_pager" class="nav nav-pills"></ul>
+						<div id="ls_dvd"></div>
+					</div>
+				</div>
+				<div id="tv_container" class="row">
+					<div class="tv_list ts_container">
+						<!-- <div class="tv_left col-xs-3">
+							<img class="img_responsive" src="http://tv.com/public/images/tvcom_logos/TVcomLogoUS.png" alt="tv.com" />
+						</div> -->
+						<div class="tv_right col-xs-12">
+							<span class="top_show_heading">New TV</span>
+							<div id="ls_tv"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div cpk-control="show_results" style="display: none;">
+			
+		</div>
+		<div cpk-control="search_results" class="bin_type_1" style="display: none;">
+			
+		</div>
+		<div cpk-control="episode_results" style="display: none;">
+			
+		</div>
+		<div class="overflow-horizontal" cpk-control="external_link" style="display: none;">
+			<iframe class="cpk_external_source" src="about:blank"></iframe>
+		</div>
+		<div cpk-control="user_dashboard" style="display: none;">
+			
+		</div>
+		<div cpk-control="video_groups" class="bin_type_1" style="display: none;">
+			
+		</div>
+		<div cpk-control="recently_watched" class="bin_type_1" style="display: none;">
+			
 		</div>
 	</div>
+	<div class="container">
+        <div class="modal" id="errorModal" role="dialog">
+            <div class="modal-dialog" style="margin-top: 125px;">
+                <div id="errorModal_Content" class="modal-content" style="background-color: black; border: 1px solid gray; color: white;">
+					
+                </div>
+            </div>
+        </div>
+		<div class="modal" id="new_video_group" role="dialog" style="display: none;">
+            <div class="modal-dialog" style="margin-top: 105px;">
+				<div style="background-color: #303030; border-radius: 0px;">
+					<div class="modal-header" style="color: white;">
+						Add New Video Group
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Name:</label>
+							<input in-type="grp_name" type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Description:</label>
+							<input in-type="grp_desc" type="text" class="form-control">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-success" style="float: right;" onclick="cpk.event_handlers.add_video_group();">Add</button>
+						<button class="btn btn-danger" style="float: right; margin-right: 10px;" onclick="$('#new_video_group').modal('toggle');">Cancel</button>
+					</div>
+				</div>
+            </div>
+        </div>
+		<div class="modal" id="confirm_modal" role="dialog" style="display: none;">
+            <div class="modal-dialog" style="margin-top: 105px;">
+				<div style="background-color: #303030; border-radius: 0px;">
+					<div class="modal-header" style="color: white;"></div>
+					<div class="modal-body" style="color: white;"></div>
+					<div class="modal-footer">
+						<button class="btn btn-success" style="float: right;">Delete</button>
+						<button class="btn btn-danger" style="float: right; margin-right: 10px;">Cancel</button>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+   	<!-- LOOK FOR JQUERY UI in Notes -->
+    <script>
+    $( "#loginBtnBug" ).click(function() {
+	  $("#loginBug").show();
+	});
+
+	var placeholders = ['Try It!','Search Movies...','Search TV...','Search Series...','Make Video Groups!','Waste Time!','Find Happiness!','Binge Watch!'];
+
+	(function cycle() { 
+	    var placeholder = placeholders.shift();
+	    $('.search_box_sample').attr('placeholder',placeholder);
+	    placeholders.push(placeholder);
+	    setTimeout(cycle,4000);
+	})();
+    </script>
 </body>
 </html>

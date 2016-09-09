@@ -18,21 +18,21 @@ module.exports.video_partials = function(callback, error) {
 				callback(partials);
 			}
 		});
-		getfile.by_group({group: 'partials', file: 'header.html'}, function(hdr) {
+		getfile.by_group({group: 'partials', file: 'video/header.html'}, function(hdr) {
 			partials['header'] = hdr;
 			finished();
 		}, function(get_err) {
 			err.push(get_err);
 			finished();
 		});
-		getfile.by_group({group: 'partials', file: 'common_ref.html'}, function(meta) {
+		getfile.by_group({group: 'partials', file: 'video/common_ref.html'}, function(meta) {
 			partials['meta'] = meta;
 			finished();
 		}, function(get_err) {
 			err.push(get_err);
 			finished();
 		});
-		getfile.by_group({group: 'partials', file: 'aside.html'}, function(meta) {
+		getfile.by_group({group: 'partials', file: 'video/aside.html'}, function(meta) {
 			partials['aside'] = meta;
 			finished();
 		}, function(get_err) {

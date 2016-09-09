@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CPK Local | Stream videos from your hard drive!</title>
+	<%- partials.meta %>
+</head>
+<body>
+	<%- partials.header %>
+	<%- partials.aside %>
+	<div class="full-page" cpk-page="show_list">
+		<div style="text-align: center;">
+			<div id="vidlist" class="container">
+				
+			</div>
+		</div>
+	</div>
+	<div class="full-page" cpk-page="video_player" style="display: none">
+		<div class="video_container">
+			<video id="vid_player" controls="true">
+				<source id="vid_src" type="video/mp4">
+			</video>
+		</div>
+	</div>
+</body>
+</html>
