@@ -8,7 +8,22 @@
 .upload-btn:focus,
 .upload-btn:active,
 .upload-btn.active {
-  color: white;
+  color: white !important;
   background-color: #9C1F1F;
+  border: none;
+}
+
+.folder-btn {
+  color: white;
+  background-color: #0EB94B;
+  border: none;
+}
+
+.folder-btn:hover,
+.folder-btn:focus,
+.folder-btn:active,
+.folder-btn.active {
+  color: white !important;
+  background-color: #119640;
   border: none;
 }
