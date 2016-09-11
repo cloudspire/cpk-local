@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	common.api_url = document.location.origin;
-	if (common.api_url == "http://localhost:3000") {
+	if (!common.api_url.includes('cpk')) {
 		common.api_url = common.api_url + "/video";
 	}
 	fserve.init();
