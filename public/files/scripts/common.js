@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	common.api_url = document.location.origin;
 	if (!common.api_url.includes('cpk')) {
-		common.api_url = common.api_url + "/video";
+		common.api_url = common.api_url + "/files";
 	}
 	fserve.init();
 	$(".aside_link").click(function(event) {
