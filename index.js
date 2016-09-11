@@ -24,23 +24,20 @@ app.use(favicon(__dirname + '/public/favicon.ico'));
 //THIS SETS UP A STATIC RESOURCE FOLDER TO ACCESS PUBLIC FILES VIA HTTP
 app.use(express.static(path.join(__dirname, 'public')));
 
-//ANY MODULE MATCHING THE ROUTE PREFIX '/' WILL RUN THIS FUNCTION FIRST, AND IF NO ERRORS, WILL CALL THE NEXT FUNCTION
-// app.all('/*', function(req, res, next) {
-	// next();
-// });
+//Pre-Process middleware
+app.all('/files/*', function(req, res, next) {
+    console.log('validating user');
+	next();
+});
 
 //Load Middleware Functions
 var home = require('./routes/index');
-var file_server = require('./routes/files');
-var files_list = require('./routes/files_list');
-var video_server = require('./routes/video');
-var video_list = require('./routes/video_list');
-
-//Load file-server routes
-app.use('/files/upload/videos', require('./routes/upload/video'));
-app.use('/files/upload/pictures', require('./routes/upload/pictures'));
-app.use('/files/upload/documents', require('./routes/upload/documents'));
-app.use('/files/upload/music', require('./routes/upload/music'));
+var file_server = require('./routes/files/files');
+var files_list = require('./routes/files/files_list');
+var video_server = require('./routes/video/video');
+var video_list = require('./routes/video/video_list');
+var cpk_upload = require('./routes/files/upload');
+var new_folder = require('./routes/files/new_folder');
 
 //Route Paths to Middleware
 app.use('/', home);
@@ -48,6 +45,8 @@ app.use('/files', file_server);
 app.use('/files/files_list', files_list);
 app.use('/video', video_server);
 app.use('/video/video_list', video_list);
+app.use('/files/upload', cpk_upload);
+app.use('/files/new_folder', new_folder);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -95,7 +94,7 @@ global.default_cache = new NodeCache();
 global.cache_flags = {
     partials: false
 }
-global.fs_root_dir = path.join(__dirname, '/private/files/dir/');
+global.fs_root_dir = path.join(__dirname, '/private/files/dir');
 
 //THIS TELLS NODE TO EXPORT THIS MODULE. SINCE IT IS THE ROOT MODULE, IT WILL FUNCTION AS ENTRY POINT TO SERVER
 module.exports = app;

@@ -3,16 +3,18 @@ var router = express.Router();
 var ls = require('list-directory-contents');
 var ejs = require('ejs');
 var __ = require('underscore');
+var getfile = require('../../controllers/get_file_contents');
 
 router.get('/', function(req, res) {
-	var files = [], errs = [];
-	var finished = __.after(4, function() {
+	var files = [], errs = [], html;
+	var finished = __.after(5, function() {
 		if (errs.length > 0) {
 			console.dir(errs);
 			res.status(500).send('Error retrieving files.');
 		} else {
 			res.json({
-				files: files
+				files: files,
+				html: html
 			});
 		}
 	});
@@ -40,6 +42,13 @@ router.get('/', function(req, res) {
 	});
 	ls('./private/files/dir/music/', function(err, tree) {
 		add(err, tree);
+	});
+	getfile.by_group({group: 'partials', file: 'files/documents.html'}, function(data) {
+		html = data;
+		finished();
+	}, function(err) {
+		errs.push(err);
+		finished();
 	});
 });
 

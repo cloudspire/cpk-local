@@ -3,13 +3,17 @@ var formidable = require('formidable');
 var fs = require('fs')
 
 module.exports.process = function(data, callback, error) {
+
+	var add_path = data.req.headers['x-path'];
 	var form = new formidable.IncomingForm();
 	form.multiples = true;
-	form.uploadDir = fs_root_dir + data.type;
+	form.uploadDir = fs_root_dir + add_path;
 	var errs = [];
+	var new_files = [];
 
 	form.on('file', function(field, file) {
 		fs.rename(file.path, path.join(form.uploadDir, file.name));
+		new_files.push(file.name);
 	});
 
 	form.on('error', function(err) {
@@ -21,7 +25,7 @@ module.exports.process = function(data, callback, error) {
 		if (errs.length > 0) {
 			error(errs);
 		} else {
-			callback();
+			callback(new_files);
 		}
 	});
 

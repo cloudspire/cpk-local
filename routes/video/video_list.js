@@ -2,10 +2,10 @@ var express = require('express');
 var router = express.Router();
 var ls = require('list-directory-contents');
 var ejs = require('ejs');
-var getfile = require('../controllers/get_file_contents');
+var getfile = require('../../controllers/get_file_contents');
 
 router.get('/', function(req, res) {
-	getfile.by_group({group: 'partials', file: 'video_list.html'}, function(html) {
+	getfile.by_group({group: 'partials', file: 'video/video_list.html'}, function(html) {
 		ls('./public/video/videos/', function(err, tree) {
 			if (err) {
 				res.status(200).send(err);

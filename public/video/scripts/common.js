@@ -1,6 +1,10 @@
 $(document).ready(function() {
+	common.api_url = document.location.origin;
+	if (common.api_url == "http://localhost:3000") {
+		common.api_url = common.api_url + "/video";
+	}
 	$.ajax({
-		url: '/video_list',
+		url: common.api_url + '/video_list',
 		type: 'GET',
 		success: function(rslt) {
 			$("#vidlist").html(rslt.html);
@@ -20,6 +24,7 @@ $(document).ready(function() {
 });
 
 var common = {
+	api_url: null,
 	toggle_aside: function() {
 		$("#cpk_aside").toggle('slide');
 	},
