@@ -275,3 +275,1152 @@ uploading video(s)
 [0mGET /files/scripts/common.js [32m200 [0m24.997 ms - 483[0m
 [0mGET /files/scripts/upload.js [32m200 [0m23.269 ms - 746[0m
 [0mGET /files/images/bgtile.png [32m200 [0m2.677 ms - 1427[0m
+[0mGET /files/styles/fserve.css [32m200 [0m3.372 ms - 463[0m
+Application available at port: 3000
+validating user
+[0mGET /files/ [32m200 [0m118.896 ms - 4558[0m
+validating user
+[0mGET /files/ [32m200 [0m17.246 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m53.580 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m55.798 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m42.242 ms - 463[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m43.513 ms - 2741[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m48.757 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m44.549 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m19.132 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m7.454 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m15.734 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m36.550 ms - 1151[0m
+validating user
+new folder /videos/Test
+[0mPOST /files/new_folder [32m200 [0m148.612 ms - 7[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m70.046 ms - 27[0m
+validating user
+[0mGET /files/ [32m200 [0m12.718 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m3.708 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m37.355 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m36.302 ms - 463[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m33.534 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m20.249 ms - 767[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m19.778 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m19.998 ms - 2741[0m
+[0mGET /files/scripts/upload.js [32m200 [0m8.409 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m7.838 ms - 1189[0m
+[0mGET /files/images/bgtile.png [32m200 [0m2.586 ms - 1427[0m
+validating user
+[0mGET /files/ [32m200 [0m10.359 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m3.729 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m33.921 ms - 463[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m33.459 ms - 1736[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m34.226 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m33.564 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m39.003 ms - 3038[0m
+[0mGET /files/scripts/common.js [32m200 [0m23.776 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m3.722 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m14.179 ms - 1151[0m
+[0mGET /files/images/bgtile.png [32m200 [0m8.544 ms - 1427[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m23.836 ms - 20[0m
+validating user
+[0mGET /files/ [32m200 [0m12.311 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m34.557 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m46.343 ms - 463[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m46.993 ms - 1736[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m45.027 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m39.854 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m45.792 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m12.923 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m7.137 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m10.480 ms - 1180[0m
+[0mGET /files/images/bgtile.png [32m200 [0m3.041 ms - 1427[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m12.771 ms - 18[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m415.450 ms - 254[0m
+validating user
+[0mGET /files/ [32m200 [0m44.679 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m29.958 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m28.936 ms - 1736[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m31.538 ms - 2741[0m
+[0mGET /files/styles/fserve.css [32m200 [0m34.196 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m33.961 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m29.831 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m9.737 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m6.532 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m15.994 ms - 1545[0m
+[0mGET /files/images/bgtile.png [36m304 [0m12.064 ms - -[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m27.008 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m29.011 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m29.158 ms - 463[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m50132.905 ms - 21[0m
+validating user
+[0mGET /files/ [32m200 [0m76.537 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m127.679 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m42.212 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m42.842 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m41.758 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m41.852 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m42.781 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m28.955 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m7.895 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m37.796 ms - 1572[0m
+[0mGET /files/images/bgtile.png [32m200 [0m20.793 ms - 1427[0m
+[0mGET /video/ [32m200 [0m41.798 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m12.782 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m9.928 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m8.318 ms - 1067[0m
+[0mGET /video/images/bgtile.png [32m200 [0m10.396 ms - 1427[0m
+[0mGET /video/video_list [32m200 [0m33.632 ms - 347[0m
+[0mGET /video/favicon.ico [32m200 [0m8.246 ms - 32038[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m7.661 ms - 120899012[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m12.804 ms - 31793[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m3.857 ms - 120898980[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [36m304 [0m5.584 ms - -[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [36m304 [0m2.716 ms - -[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [36m304 [0m2.514 ms - -[0m
+validating user
+[0mGET /files/ [32m200 [0m12.943 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m4.297 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m11.441 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m19.602 ms - 463[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m18.227 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m18.146 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m16.681 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m12.351 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m2.986 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m15.675 ms - 1572[0m
+[0mGET /files/images/bgtile.png [32m200 [0m5.275 ms - 1427[0m
+validating user
+[0mGET /files/ [32m200 [0m18.127 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m3.049 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m12.942 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m12.278 ms - 463[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m15.681 ms - 2741[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m16.278 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m16.415 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m12.028 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m2.753 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m9.421 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m18.512 ms - 1572[0m
+validating user
+[0mGET /files/ [32m200 [0m11.116 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m3.850 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m20.524 ms - 1736[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m22.435 ms - 100900[0m
+[0mGET /files/styles/fserve.css [32m200 [0m25.113 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m23.889 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m24.147 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m10.520 ms - 767[0m
+validating user
+[0mGET /files/scripts/upload.js [32m200 [0m5.622 ms - 1389[0m
+[0mGET /files/ [32m200 [0m15.387 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m20.614 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m18.491 ms - 463[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m17.906 ms - 1736[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m18.245 ms - 100900[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m23.586 ms - 2741[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m12.884 ms - 3038[0m
+[0mGET /files/scripts/common.js [32m200 [0m13.187 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m5.357 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m17.173 ms - 1515[0m
+[0mGET /files/images/bgtile.png [32m200 [0m8.685 ms - 1427[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m2807.729 ms - 26[0m
+validating user
+[0mGET /files/ [32m200 [0m15.755 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m12.490 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m18.951 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m36.218 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m36.086 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m35.597 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m36.807 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m23.819 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m17.400 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m20.984 ms - 1546[0m
+[0mGET /files/images/bgtile.png [32m200 [0m7.033 ms - 1427[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m7.251 ms - 120899012[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m4.892 ms - 31793[0m
+[0mGET /video/videos/roman-walking.mp4 [36m304 [0m3.248 ms - -[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m4.435 ms - 120824608[0m
+validating user
+[0mGET /files/ [32m200 [0m8.237 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m17.430 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m19.016 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m18.530 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m19.053 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m21.901 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m19.598 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m17.461 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m17.469 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m13.898 ms - 1546[0m
+[0mGET /files/images/bgtile.png [32m200 [0m8.309 ms - 1427[0m
+validating user
+[0mGET /files/favicon.ico [33m404 [0m5.099 ms - 46[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m87.284 ms - 19[0m
+[0mGET /video/ [32m200 [0m10.547 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m7.570 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m10.362 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m6.372 ms - 1067[0m
+[0mGET /video/video_list [32m200 [0m19.726 ms - 347[0m
+[0mGET /video/images/bgtile.png [32m200 [0m12.593 ms - 1427[0m
+[0mGET /video/favicon.ico [32m200 [0m13.845 ms - 32038[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m4.844 ms - 120899012[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m5.107 ms - 50628[0m
+[0mGET /video/videos/roman-walking.mp4 [36m304 [0m2.160 ms - -[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m3.361 ms - 120815372[0m
+validating user
+[0mGET /files/ [32m200 [0m18.694 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m6.471 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m23.817 ms - 463[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m23.700 ms - 1736[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m21.407 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m21.783 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m22.271 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m6.924 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m4.132 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m13.279 ms - 1573[0m
+[0mGET /files/images/bgtile.png [36m304 [0m1.967 ms - -[0m
+[0mGET / [32m200 [0m22.596 ms - 16149[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m23.846 ms - 15831[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m26.305 ms - 42839[0m
+[0mGET /scripts/server_config.min.js [36m304 [0m7.289 ms - -[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m26.285 ms - 7345[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m27.863 ms - 10173[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m21.057 ms - 29780[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m33.203 ms - 44715[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m22.640 ms - 3406[0m
+[0mGET /scripts/main.min.js [32m200 [0m15.060 ms - 11005[0m
+[0mGET /images/bgtile.png [36m304 [0m5.981 ms - -[0m
+[0mGET /images/favicons/favicon-32x32.png [36m304 [0m5.903 ms - -[0m
+[0mGET /images/favicons/favicon-16x16.png [36m304 [0m1.867 ms - -[0m
+[0mGET /images/favicons/favicon-96x96.png [36m304 [0m4.146 ms - -[0m
+[0mGET /images/favicons/favicon-160x160.png [36m304 [0m5.195 ms - -[0m
+[0mGET /images/favicons/favicon-192x192.png [36m304 [0m2.068 ms - -[0m
+[0mGET / [32m200 [0m14.719 ms - 16149[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m3.693 ms - 15831[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m3.784 ms - 42839[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m15.105 ms - 7345[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m32.030 ms - 10173[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m32.812 ms - 44715[0m
+[0mGET /scripts/server_config.min.js [32m200 [0m36.147 ms - 58[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m4.592 ms - 29780[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m5.086 ms - 3406[0m
+[0mGET /scripts/main.min.js [32m200 [0m5.294 ms - 11005[0m
+[0mGET /images/bgtile.png [32m200 [0m6.721 ms - 5265[0m
+[0mGET /images/favicons/favicon-32x32.png [32m200 [0m6.705 ms - 1443[0m
+[0mGET /images/favicons/favicon-16x16.png [32m200 [0m8.405 ms - 692[0m
+[0mGET /images/favicons/favicon-96x96.png [32m200 [0m7.799 ms - 5295[0m
+[0mGET /images/favicons/favicon-160x160.png [32m200 [0m6.932 ms - 10181[0m
+[0mGET /images/favicons/favicon-192x192.png [32m200 [0m7.140 ms - 13007[0m
+[0mGET /images/favicons/favicon.ico [32m200 [0m7.235 ms - 15086[0m
+[0mGET /video [36m301 [0m11.051 ms - 45[0m
+[0mGET /video/ [32m200 [0m9.402 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m3.368 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m7.358 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m7.483 ms - 1067[0m
+[0mGET /video_list [33m404 [0m13.362 ms - 46[0m
+[0mGET /video/images/bgtile.png [32m200 [0m8.790 ms - 1427[0m
+[0mGET /favicon.ico [32m200 [0m12.014 ms - 32038[0m
+[0mGET /files [36m301 [0m3.084 ms - 45[0m
+validating user
+[0mGET /files/ [32m200 [0m10.598 ms - 4558[0m
+[0mGET /files/styles/fserve.css [32m200 [0m75.960 ms - 463[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m75.230 ms - 1736[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m77.961 ms - 11525[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m75.099 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m68.021 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m12.889 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m8.469 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m3.021 ms - 1389[0m
+[0mGET /files_list [33m404 [0m3.018 ms - 46[0m
+[0mGET /files/images/bgtile.png [32m200 [0m6.461 ms - 1427[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m12.097 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m11.877 ms - 463[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m11.138 ms - 1736[0m
+validating user
+[0mGET /files/ [32m200 [0m9.878 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m10.644 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m9.853 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m19.558 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m30.229 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m20.929 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m19.643 ms - 767[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m22.189 ms - 100900[0m
+[0mGET /files/scripts/upload.js [32m200 [0m22.915 ms - 1389[0m
+[0mGET /files_list [33m404 [0m2.758 ms - 46[0m
+[0mGET /files/images/bgtile.png [32m200 [0m3.170 ms - 1427[0m
+validating user
+[0mGET /files/ [32m200 [0m10.222 ms - 4558[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m15.412 ms - 1736[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m17.407 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m22.418 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m22.959 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m23.238 ms - 100900[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m18.125 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m3.643 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m3.608 ms - 1389[0m
+[0mGET /files_list [33m404 [0m8.292 ms - 46[0m
+validating user
+[0mGET /files/ [32m200 [0m25.359 ms - 4558[0m
+[0mGET /files/images/bgtile.png [32m200 [0m13.381 ms - 1427[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m145.251 ms - 1736[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m25.346 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m25.999 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m26.816 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m27.476 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m27.347 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m6.083 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m5.814 ms - 1389[0m
+[0mGET /files/images/bgtile.png [32m200 [0m3.537 ms - 1427[0m
+validating user
+[0mGET /files/ [32m200 [0m10.740 ms - 4558[0m
+[0mGET /files_list [33m404 [0m4.004 ms - 46[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m5.414 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m7.610 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m14.040 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m13.962 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m14.210 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m13.582 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m14.182 ms - 767[0m
+[0mGET /files/scripts/upload.js [32m200 [0m2.596 ms - 1389[0m
+[0mGET /files/images/bgtile.png [32m200 [0m3.352 ms - 1427[0m
+[0mGET /files_list [33m404 [0m3.908 ms - 46[0m
+Application available at port: 3000
+validating user
+[0mGET /files/ [32m200 [0m125.494 ms - 4558[0m
+validating user
+[0mGET /files/ [32m200 [0m17.681 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m52.887 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m71.942 ms - 1736[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m68.048 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m24.376 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m67.859 ms - 100900[0m
+[0mGET /files/styles/fserve.css [32m200 [0m30.060 ms - 463[0m
+[0mGET /files/scripts/common.js [32m200 [0m24.101 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m29.969 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m22.922 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m45.361 ms - 1573[0m
+[0mGET /video/ [32m200 [0m25.725 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m21.792 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m21.540 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m10.134 ms - 1057[0m
+[0mGET /video/images/bgtile.png [36m304 [0m10.789 ms - -[0m
+[0mGET /video/video_list [36m304 [0m45.134 ms - -[0m
+validating user
+[0mGET /files/ [32m200 [0m11.086 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m24.382 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m39.620 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m38.885 ms - 463[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m37.732 ms - 100900[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m22.025 ms - 2741[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m31.065 ms - 3038[0m
+[0mGET /files/scripts/common.js [32m200 [0m3.277 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m2.935 ms - 1389[0m
+[0mGET /files/images/bgtile.png [32m200 [0m2.752 ms - 1427[0m
+[0mGET /video/files_list [33m404 [0m13.106 ms - 46[0m
+validating user
+[0mGET /files/ [32m200 [0m10.992 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m6.256 ms - 11525[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m32.899 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m41.890 ms - 100900[0m
+[0mGET /files/styles/fserve.css [32m200 [0m42.513 ms - 463[0m
+[0mGET /files/scripts/common.js [32m200 [0m37.799 ms - 757[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m37.311 ms - 2741[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m67.046 ms - 1736[0m
+[0mGET /files/scripts/upload.js [32m200 [0m31.653 ms - 1389[0m
+validating user
+[0mGET /files/ [32m200 [0m12.832 ms - 4558[0m
+[0mGET /files/scripts/upload.js [32m200 [0m3.349 ms - 1389[0m
+[0mGET /video/files_list [33m404 [0m4.231 ms - 46[0m
+[0mGET /files/images/bgtile.png [36m304 [0m2.659 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m11.682 ms - 32038[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m12.818 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m11.263 ms - 463[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m13.077 ms - 11525[0m
+Application available at port: 3000
+validating user
+[0mGET /files/ [32m200 [0m108.559 ms - 4558[0m
+validating user
+[0mGET /files/ [32m200 [0m18.869 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m48.403 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m53.712 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m45.841 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m45.368 ms - 100900[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m47.994 ms - 1736[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m48.238 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m11.321 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m16.419 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m19.123 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m41.888 ms - 1573[0m
+[0mGET /video [36m301 [0m10.409 ms - 45[0m
+[0mGET /video/ [32m200 [0m23.472 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m15.966 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m16.192 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m16.475 ms - 1057[0m
+[0mGET /video/video_list [32m200 [0m44.340 ms - 347[0m
+[0mGET /video/images/bgtile.png [32m200 [0m34.849 ms - 1427[0m
+[0mGET / [32m200 [0m21.860 ms - 16149[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m8.919 ms - 15831[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m26.495 ms - 7345[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m27.438 ms - 42839[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m25.049 ms - 44715[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m26.768 ms - 10173[0m
+[0mGET /scripts/server_config.min.js [32m200 [0m25.090 ms - 58[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m7.607 ms - 29780[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m11.081 ms - 3406[0m
+[0mGET /scripts/main.min.js [32m200 [0m14.625 ms - 11005[0m
+[0mGET /images/bgtile.png [32m200 [0m8.399 ms - 5265[0m
+[0mGET /files [36m301 [0m3.316 ms - 45[0m
+validating user
+[0mGET /files/ [32m200 [0m11.492 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m5.426 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m40.553 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m48.520 ms - 463[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m41.941 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m36.938 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m39.858 ms - 757[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m43.002 ms - 100900[0m
+[0mGET /files/scripts/upload.js [32m200 [0m8.762 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m10.503 ms - 1573[0m
+[0mGET /files/images/bgtile.png [32m200 [0m2.531 ms - 1427[0m
+[0mGET /favicon.ico [32m200 [0m10.254 ms - 32038[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m17694.607 ms - 33[0m
+[0mGET /video [36m301 [0m4.466 ms - 45[0m
+[0mGET /video/ [32m200 [0m16.756 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m17.358 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m18.661 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m17.700 ms - 1057[0m
+[0mGET /video/video_list [32m200 [0m14.995 ms - 523[0m
+[0mGET /video/images/bgtile.png [32m200 [0m4.162 ms - 1427[0m
+[0mGET /video/videos/video-2013-02-18-08-01-11.mp4 [32m206 [0m10.637 ms - 42590867[0m
+[0mGET /video/videos/video-2013-02-18-08-01-11.mp4 [32m206 [0m25.327 ms - 58003[0m
+[0mGET /video/videos/video-2013-02-18-08-01-11.mp4 [32m206 [0m8.298 ms - 65537[0m
+[0mGET /video/videos/video-2013-02-18-08-01-11.mp4 [32m206 [0m3.647 ms - 42295955[0m
+validating user
+[0mGET /files/ [32m200 [0m14.976 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m27.657 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m27.366 ms - 463[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m28.966 ms - 1736[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m29.333 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m30.488 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m27.436 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m14.097 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m15.138 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m14.756 ms - 1612[0m
+[0mGET /files/images/bgtile.png [36m304 [0m3.747 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m0.893 ms - 32038[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m3343.702 ms - 33[0m
+[0mGET /video/ [32m200 [0m10.006 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m4.810 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m11.587 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m10.957 ms - 1057[0m
+[0mGET /video/video_list [32m200 [0m10.487 ms - 699[0m
+[0mGET /video/images/bgtile.png [36m304 [0m2.801 ms - -[0m
+[0mGET /video/videos/video-2013-02-18-09-44-43.mp4 [32m206 [0m4.039 ms - 8963030[0m
+[0mGET /video/videos/video-2013-02-18-09-44-43.mp4 [32m206 [0m12.574 ms - 17366[0m
+[0mGET /video/videos/video-2013-02-18-09-44-43.mp4 [32m206 [0m12.237 ms - 65537[0m
+[0mGET /video/videos/video-2013-02-18-09-44-43.mp4 [32m206 [0m8.441 ms - 8831958[0m
+[0mGET /video/videos/video-2013-02-18-09-44-43.mp4 [32m206 [0m3.600 ms - 8176598[0m
+validating user
+[0mGET /files/ [32m200 [0m24.434 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m27.919 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m39.451 ms - 1736[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m46.299 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m45.927 ms - 2741[0m
+[0mGET /files/styles/fserve.css [32m200 [0m39.345 ms - 463[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m46.932 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m23.248 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m8.159 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m14.232 ms - 1651[0m
+[0mGET /files/images/bgtile.png [36m304 [0m1.846 ms - -[0m
+[0mGET / [32m200 [0m27.049 ms - 16149[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m37.795 ms - 15831[0m
+[0mGET /scripts/server_config.min.js [32m200 [0m28.368 ms - 58[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m37.491 ms - 44715[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m37.527 ms - 7345[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m38.991 ms - 10173[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m40.115 ms - 42839[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m8.971 ms - 3406[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m8.951 ms - 29780[0m
+[0mGET /scripts/main.min.js [32m200 [0m11.672 ms - 11005[0m
+[0mGET /images/bgtile.png [36m304 [0m2.410 ms - -[0m
+[0mGET /images/favicons/favicon-192x192.png [32m200 [0m9.943 ms - 13007[0m
+[0mGET /images/favicons/apple-touch-icon-180x180.png [32m200 [0m7.883 ms - 12104[0m
+validating user
+[0mGET /files/ [32m200 [0m9.727 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m14.417 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m19.221 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m19.328 ms - 463[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m22.270 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m22.098 ms - 757[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m28.466 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m27.644 ms - 2741[0m
+[0mGET /files/scripts/upload.js [32m200 [0m22.364 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m15.242 ms - 1651[0m
+[0mGET /files/images/bgtile.png [32m200 [0m2.745 ms - 1427[0m
+validating user
+uploading video(s)
+[0mGET /video/ [32m200 [0m125.247 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m27.250 ms - 11525[0m
+[0mGET /video/scripts/common.js [32m200 [0m21.780 ms - 1057[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m24.824 ms - 1736[0m
+[0mGET /video/images/bgtile.png [36m304 [0m9.565 ms - -[0m
+[0mGET /video/video_list [32m200 [0m43.523 ms - 699[0m
+[0mGET /video/favicon.ico [32m200 [0m1049.939 ms - 32038[0m
+[0mGET /video/ [32m200 [0m34.951 ms - 2629[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m14.826 ms - 1736[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m15.320 ms - 11525[0m
+[0mGET /video/scripts/common.js [32m200 [0m15.412 ms - 1057[0m
+[0mGET /video/images/bgtile.png [36m304 [0m9.140 ms - -[0m
+[0mGET /video/video_list [36m304 [0m33.218 ms - -[0m
+[0mGET /video/favicon.ico [32m200 [0m10.887 ms - 32038[0m
+[0mGET /video/ [32m200 [0m173.293 ms - 2629[0m
+[0mGET /video/scripts/common.js [32m200 [0m45.822 ms - 1057[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m51.929 ms - 1736[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m34.839 ms - 11525[0m
+[0mGET /video/images/bgtile.png [36m304 [0m10.262 ms - -[0m
+[0mGET /video/favicon.ico [32m200 [0m24.437 ms - 32038[0m
+[0mGET /video/ [32m200 [0m59.390 ms - 2629[0m
+[0mGET /video/ [32m200 [0m67.257 ms - 2629[0m
+[0mGET /video/video_list [36m304 [0m6598.087 ms - -[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m16.505 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m16.701 ms - 1057[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m16.519 ms - 11525[0m
+[0mGET /video/images/bgtile.png [36m304 [0m2.135 ms - -[0m
+[0mGET /video/video_list [32m200 [0m12.541 ms - 699[0m
+[0mGET /video/ [32m200 [0m12.841 ms - 2629[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m16.703 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m19.153 ms - 1057[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m20.009 ms - 11525[0m
+[0mGET /video/images/bgtile.png [36m304 [0m4.797 ms - -[0m
+[0mGET /video/video_list [36m304 [0m18.094 ms - -[0m
+[0mGET /video/favicon.ico [32m200 [0m5.850 ms - 32038[0m
+[0mGET /video/ [32m200 [0m104.404 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m56.981 ms - 11525[0m
+[0mGET /video/scripts/common.js [32m200 [0m45.724 ms - 1057[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m50.847 ms - 1736[0m
+[0mGET /video/images/bgtile.png [36m304 [0m5.764 ms - -[0m
+[0mGET /video/video_list [36m304 [0m33.227 ms - -[0m
+[0mGET /video/favicon.ico [32m200 [0m8.410 ms - 32038[0m
+[0mPOST /files/upload [32m200 [0m193759.937 ms - 23[0m
+[0mGET /video/ [32m200 [0m20.963 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m34.268 ms - 11525[0m
+[0mGET /video/scripts/common.js [32m200 [0m35.126 ms - 1057[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m10.780 ms - 1736[0m
+[0mGET /video/images/bgtile.png [36m304 [0m3.338 ms - -[0m
+[0mGET /video/video_list [32m200 [0m24.576 ms - 865[0m
+[0mGET /video/favicon.ico [32m200 [0m2.915 ms - 32038[0m
+[0mGET /video/ [32m200 [0m10.221 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m13.517 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m12.540 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m12.447 ms - 1057[0m
+[0mGET /video/video_list [32m200 [0m10.867 ms - 865[0m
+[0mGET /video/images/bgtile.png [36m304 [0m2.735 ms - -[0m
+[0mGET /video/videos/20151121_215208.mp4 [32m206 [0m10.695 ms - 447388322[0m
+[0mGET /video/videos/20151121_215208.mp4 [32m206 [0m24.515 ms - 65537[0m
+[0mGET /video/videos/20151121_215208.mp4 [32m206 [0m15.328 ms - 137890[0m
+[0mGET /video/videos/20151121_215208.mp4 [32m206 [0m3.617 ms - 447355554[0m
+validating user
+[0mGET /files/ [32m200 [0m23.948 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m18.380 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m24.194 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m22.750 ms - 463[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m13.605 ms - 2741[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m13.658 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m14.107 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m2.843 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m2.918 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m20.134 ms - 1615[0m
+[0mGET /files/images/bgtile.png [32m200 [0m6.887 ms - 1427[0m
+[0mGET /video/ [32m200 [0m10.034 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m10.662 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m20.947 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m9.011 ms - 1057[0m
+[0mGET /video/video_list [32m200 [0m8.004 ms - 663[0m
+[0mGET /video/images/bgtile.png [36m304 [0m2.288 ms - -[0m
+[0mGET /video/favicon.ico [32m200 [0m2.973 ms - 32038[0m
+[0mGET /video/videos/train-2.mp4 [32m206 [0m4.032 ms - 8963030[0m
+[0mGET /video/videos/train-2.mp4 [32m206 [0m3.593 ms - 8364[0m
+[0mGET /video/videos/train-2.mp4 [36m304 [0m1.974 ms - -[0m
+[0mGET /video/videos/train-2.mp4 [32m206 [0m3.562 ms - 8789900[0m
+[0mGET /video/videos/train-2.mp4 [32m206 [0m3.067 ms - 982[0m
+[0mGET /video/videos/train-2.mp4 [36m304 [0m2.709 ms - -[0m
+[0mGET /video/videos/train-2.mp4 [36m304 [0m2.547 ms - -[0m
+[0mGET /video/videos/train-2.mp4 [36m304 [0m2.547 ms - -[0m
+[0mGET /video/videos/train-1.mp4 [32m206 [0m4.715 ms - 42590867[0m
+[0mGET /video/videos/train-1.mp4 [32m206 [0m4.082 ms - 35632[0m
+[0mGET /video/videos/train-1.mp4 [36m304 [0m1.879 ms - -[0m
+[0mGET /video/videos/train-1.mp4 [32m206 [0m3.263 ms - 42513052[0m
+[0mGET /video/videos/train-1.mp4 [32m206 [0m3.545 ms - 659[0m
+[0mGET /video/ [32m200 [0m6.973 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m10.568 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m9.360 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m11.334 ms - 1057[0m
+[0mGET /video/ [32m200 [0m13.635 ms - 2629[0m
+[0mGET /video/video_list [32m200 [0m14.507 ms - 668[0m
+[0mGET /video/images/bgtile.png [36m304 [0m2.049 ms - -[0m
+[0mGET /video/favicon.ico [32m200 [0m3.015 ms - 32038[0m
+[0mGET /video/videos/abwr/train-1.mp4 [32m206 [0m4.157 ms - 42590867[0m
+[0mGET /video/videos/abwr/train-1.mp4 [32m206 [0m6.088 ms - 35632[0m
+[0mGET /video/videos/abwr/train-1.mp4 [36m304 [0m2.061 ms - -[0m
+[0mGET /video/videos/abwr/train-1.mp4 [32m206 [0m2.949 ms - 42507431[0m
+[0mGET /video/videos/abwr/train-1.mp4 [36m304 [0m1.904 ms - -[0m
+[0mGET /video/videos/abwr/train-1.mp4 [32m206 [0m5.029 ms - 26878131[0m
+[0mGET /video/videos/abwr/train-1.mp4 [32m206 [0m9.042 ms - 659[0m
+[0mGET /video/videos/abwr/train-1.mp4 [36m304 [0m2.203 ms - -[0m
+[0mGET /video/videos/abwr/train-1.mp4 [36m304 [0m2.031 ms - -[0m
+[0mGET /video/ [32m200 [0m11.740 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m16.251 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m13.382 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m12.598 ms - 1057[0m
+[0mGET /video/images/bgtile.png [36m304 [0m3.691 ms - -[0m
+[0mGET /video/video_list [32m200 [0m20.270 ms - 673[0m
+[0mGET /video/favicon.ico [32m200 [0m3.254 ms - 32038[0m
+validating user
+[0mGET /files/ [32m200 [0m8.519 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m15.365 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m18.182 ms - 463[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m14.370 ms - 1736[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m8.334 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m8.642 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m3.019 ms - 3038[0m
+[0mGET /files/scripts/common.js [32m200 [0m2.969 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m2.693 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m22.660 ms - 1625[0m
+[0mGET /files/images/bgtile.png [32m200 [0m6.681 ms - 1427[0m
+validating user
+[0mGET /files/ [32m200 [0m12.111 ms - 4558[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m10.853 ms - 1736[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m18.416 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m23.769 ms - 463[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m24.014 ms - 2741[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m22.226 ms - 3038[0m
+[0mGET /files/scripts/common.js [32m200 [0m25.432 ms - 757[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m24.722 ms - 100900[0m
+[0mGET /files/scripts/upload.js [32m200 [0m16.981 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [36m304 [0m3.744 ms - -[0m
+[0mGET /files/files_list [36m304 [0m20.370 ms - -[0m
+Application available at port: 3000
+validating user
+[0mGET /files/ [32m200 [0m107.192 ms - 4558[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m43.131 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m18.747 ms - 463[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m21.139 ms - 11525[0m
+[0mGET /video/ [32m200 [0m33.428 ms - 2629[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m10.069 ms - 1736[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m11.127 ms - 11525[0m
+[0mGET /video/scripts/common.js [32m200 [0m9.694 ms - 1057[0m
+[0mGET /video/images/bgtile.png [36m304 [0m9.762 ms - -[0m
+[0mGET /video/video_list [36m304 [0m55.840 ms - -[0m
+validating user
+[0mGET /files/ [32m200 [0m15.111 ms - 4558[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m15.369 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m12.513 ms - 463[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m12.156 ms - 11525[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m15.216 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m14.137 ms - 2741[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m14.927 ms - 100900[0m
+[0mGET /files/scripts/upload.js [32m200 [0m10.290 ms - 1389[0m
+[0mGET /files/scripts/common.js [32m200 [0m17.638 ms - 757[0m
+validating user
+[0mGET /files/images/bgtile.png [36m304 [0m9.302 ms - -[0m
+[0mGET /files/files_list [32m200 [0m29.944 ms - 1625[0m
+[0mGET /video/videos/roman-walking.mp4 [36m304 [0m2.419 ms - -[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m15.840 ms - 621[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m9.458 ms - 452[0m
+[0mGET /video/videos/roman-walking.mp4 [36m304 [0m2.270 ms - -[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m10.765 ms - 98979116[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [36m304 [0m3.499 ms - -[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [36m304 [0m2.087 ms - -[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [36m304 [0m1.734 ms - -[0m
+validating user
+[0mGET /files/ [32m200 [0m9.630 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m21.983 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m3.599 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m4.267 ms - 463[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m3.471 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m3.755 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m3.554 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m3.067 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m2.904 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m15.745 ms - 1625[0m
+[0mGET /files/images/bgtile.png [36m304 [0m1.951 ms - -[0m
+[0mGET /video/ [32m200 [0m11.913 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m11.027 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m13.944 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m7.408 ms - 1057[0m
+[0mGET /video/images/bgtile.png [36m304 [0m3.402 ms - -[0m
+[0mGET /video/video_list [36m304 [0m19.087 ms - -[0m
+[0mGET /video/favicon.ico [32m200 [0m10.243 ms - 32038[0m
+[0mGET /video/videos/abwr/train-1.mp4 [36m304 [0m11.244 ms - -[0m
+[0mGET /video/videos/abwr/train-1.mp4 [36m304 [0m3.429 ms - -[0m
+[0mGET /video/videos/abwr/train-1.mp4 [36m304 [0m2.529 ms - -[0m
+[0mGET /video/videos/roman-walking.mp4 [36m304 [0m1.850 ms - -[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m3.557 ms - 621[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m4.846 ms - 452[0m
+[0mGET /video/videos/roman-walking.mp4 [36m304 [0m2.224 ms - -[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m14.175 ms - 1736[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m18.636 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m18.801 ms - 463[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m3.420 ms - 98870468[0m
+validating user
+new folder /videos/Coheed_Live
+[0mPOST /files/new_folder [32m200 [0m147.354 ms - 7[0m
+validating user
+uploading video(s)
+[0mGET /video/ [32m200 [0m93.830 ms - 2629[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m35.912 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m25.895 ms - 1057[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m11.721 ms - 11525[0m
+[0mGET /video/images/bgtile.png [36m304 [0m6.312 ms - -[0m
+[0mGET /video/video_list [32m200 [0m88.274 ms - 851[0m
+[0mGET /video/favicon.ico [32m200 [0m8.259 ms - 32038[0m
+[0mPOST /files/upload [32m200 [0m81575.440 ms - 45[0m
+[0mGET /video/ [32m200 [0m27.197 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m4.633 ms - 11525[0m
+[0mGET /video/scripts/common.js [32m200 [0m14.550 ms - 1057[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m9.633 ms - 1736[0m
+[0mGET /video/images/bgtile.png [36m304 [0m3.296 ms - -[0m
+[0mGET /video/video_list [32m200 [0m16.981 ms - 1029[0m
+[0mGET /video/favicon.ico [32m200 [0m2.918 ms - 32038[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m7.230 ms - 65614695[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m15.158 ms - 18833[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m3.575 ms - 65614663[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m9.261 ms - 65614695[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m4.700 ms - 18833[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [36m304 [0m2.394 ms - -[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m4.519 ms - 65555540[0m
+[0mGET /video/videos/Coheed_Live/20151017_215747.mp4 [32m206 [0m4.442 ms - 168131365[0m
+[0mGET /video/videos/Coheed_Live/20151017_215747.mp4 [32m206 [0m5.302 ms - 43509[0m
+[0mGET /video/videos/Coheed_Live/20151017_215747.mp4 [36m304 [0m2.075 ms - -[0m
+[0mGET /video/videos/Coheed_Live/20151017_215747.mp4 [32m206 [0m12.313 ms - 168046236[0m
+[0mGET /video/videos/Coheed_Live/20151017_215747.mp4 [36m304 [0m5.031 ms - -[0m
+[0mGET /video/videos/Coheed_Live/20151017_215747.mp4 [32m206 [0m5.619 ms - 8212688[0m
+[0mGET /video/videos/Coheed_Live/20151017_215747.mp4 [32m206 [0m4.197 ms - 805[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [36m304 [0m3.276 ms - -[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m4.280 ms - 554[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m4.097 ms - 871[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [36m304 [0m2.385 ms - -[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m3.946 ms - 57181144[0m
+validating user
+[0mGET /files/ [32m200 [0m29.063 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m27.333 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m32.075 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m32.379 ms - 463[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m31.485 ms - 2741[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m32.233 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m32.531 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m9.464 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m7.492 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [36m304 [0m7.021 ms - -[0m
+[0mGET /files/files_list [32m200 [0m26.783 ms - 1707[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m14.410 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m14.455 ms - 463[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m16.455 ms - 11525[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m10.402 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m15.487 ms - 1736[0m
+validating user
+[0mGET /files/ [32m200 [0m121.575 ms - 4558[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m18.348 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m12.269 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m3.401 ms - 463[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m6.323 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m16.967 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m17.686 ms - 2741[0m
+[0mGET /files/scripts/upload.js [32m200 [0m17.423 ms - 1389[0m
+[0mGET /files/scripts/common.js [32m200 [0m11.422 ms - 757[0m
+validating user
+[0mGET /files/files_list [32m200 [0m16.312 ms - 1707[0m
+[0mGET /files/images/bgtile.png [32m200 [0m7.958 ms - 1427[0m
+validating user
+[0mGET /files/ [32m200 [0m10.943 ms - 4558[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m11.420 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m10.380 ms - 463[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m9.580 ms - 11525[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m31.569 ms - 3038[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m24.919 ms - 100900[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m20.481 ms - 2741[0m
+[0mGET /files/scripts/upload.js [32m200 [0m3.387 ms - 1389[0m
+[0mGET /files/scripts/common.js [32m200 [0m3.038 ms - 757[0m
+validating user
+[0mGET /files/images/bgtile.png [36m304 [0m4.311 ms - -[0m
+[0mGET /files/files_list [36m304 [0m23.822 ms - -[0m
+validating user
+[0mGET /files/ [32m200 [0m11.979 ms - 4558[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m13.864 ms - 1736[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m12.083 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m12.147 ms - 463[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m15.328 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m14.971 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m13.358 ms - 2741[0m
+[0mGET /files/scripts/common.js [32m200 [0m12.830 ms - 757[0m
+[0mGET /files/scripts/upload.js [32m200 [0m7.112 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m17.790 ms - 1707[0m
+[0mGET /files/images/bgtile.png [32m200 [0m2.883 ms - 1427[0m
+[0mGET /video/ [32m200 [0m11.560 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m18.620 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m8.300 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m3.565 ms - 1057[0m
+[0mGET /video/video_list [32m200 [0m14.028 ms - 1029[0m
+[0mGET /video/images/bgtile.png [32m200 [0m9.078 ms - 1427[0m
+[0mGET /video/ [32m200 [0m11.269 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m12.419 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m10.975 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m9.279 ms - 1057[0m
+[0mGET /video/video_list [32m200 [0m13.264 ms - 1029[0m
+[0mGET /video/images/bgtile.png [32m200 [0m3.465 ms - 1427[0m
+[0mGET /video/videos/abwr/train-1.mp4 [32m206 [0m18.143 ms - 42590867[0m
+[0mGET /video/videos/abwr/train-1.mp4 [32m206 [0m13.498 ms - 35632[0m
+[0mGET /video/videos/abwr/train-1.mp4 [32m206 [0m8.645 ms - 42590827[0m
+[0mGET / [32m200 [0m22.775 ms - 16149[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m19.071 ms - 15831[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m17.445 ms - 7345[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m19.416 ms - 42839[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m36.793 ms - 10173[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m23.087 ms - 3406[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m41.275 ms - 44715[0m
+[0mGET /scripts/server_config.min.js [32m200 [0m45.256 ms - 58[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m27.733 ms - 29780[0m
+[0mGET /scripts/main.min.js [32m200 [0m26.922 ms - 11005[0m
+[0mGET /images/bgtile.png [36m304 [0m6.612 ms - -[0m
+Application available at port: 3000
+validating user
+[0mGET /files/ [32m200 [0m112.983 ms - 5222[0m
+validating user
+[0mGET /files/ [32m200 [0m18.813 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m58.036 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m62.284 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m43.625 ms - 1001[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m43.885 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m49.300 ms - 4622[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m49.348 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m21.487 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m17.022 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m21.076 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m46.705 ms - 1903[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/pictures/bt-flyer-3.jpg
+[0mGET /files/download_files?file=/pictures/bt-flyer-3.jpg [32m200 [0m28.739 ms - 128472[0m
+[0mGET /video/ [32m200 [0m23.750 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m13.765 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m27.322 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m26.944 ms - 1136[0m
+[0mGET /video/ [32m200 [0m8.269 ms - 2629[0m
+[0mGET /video/images/bgtile.png [32m200 [0m12.525 ms - 1427[0m
+[0mGET /video/video_list [32m200 [0m38.060 ms - 1029[0m
+[0mGET /video/favicon.ico [32m200 [0m9.669 ms - 32038[0m
+validating user
+[0mGET /files/ [32m200 [0m12.269 ms - 5222[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m41.261 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m49.361 ms - 1001[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m43.426 ms - 11525[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m40.740 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m31.106 ms - 4622[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m43.483 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m34.123 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m13.261 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m12.834 ms - 1903[0m
+[0mGET /files/images/bgtile.png [36m304 [0m3.606 ms - -[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/documents/Blog Ideas.txt
+[0mGET /files/download_files?file=/documents/Blog%20Ideas.txt [32m200 [0m17.100 ms - 58[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/documents/Blog Ideas.txt
+[0mGET /files/download_files?file=/documents/Blog%20Ideas.txt [32m200 [0m18.800 ms - 58[0m
+validating user
+[0mGET /files/ [32m200 [0m11.105 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m14.116 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m39.311 ms - 1001[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m37.857 ms - 1736[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m36.656 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m34.153 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m32.837 ms - 4622[0m
+[0mGET /files/scripts/common.js [32m200 [0m29.579 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m3.504 ms - 1389[0m
+validating user
+[0mGET /files/files_list [36m304 [0m37.079 ms - -[0m
+[0mGET /files/images/bgtile.png [36m304 [0m3.138 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m19.033 ms - 32038[0m
+[0mGET /video/ [32m200 [0m9.976 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m3.719 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m3.739 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m3.653 ms - 1136[0m
+[0mGET /video/video_list [32m200 [0m13.759 ms - 1029[0m
+[0mGET /video/images/bgtile.png [36m304 [0m15.732 ms - -[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [32m206 [0m17.515 ms - 44828048[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [32m206 [0m15.652 ms - 230800[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [32m206 [0m11.431 ms - 65537[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [36m304 [0m2.553 ms - -[0m
+[0mGET /video/videos/coheed-cambria_island.mp4 [32m206 [0m4.011 ms - 44490592[0m
+[0mGET / [32m200 [0m133.980 ms - 16149[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m30.469 ms - 42839[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m27.722 ms - 15831[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m28.314 ms - 7345[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m27.691 ms - 44715[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m37.983 ms - 10173[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m26.084 ms - 3406[0m
+[0mGET /scripts/server_config.min.js [36m304 [0m3.171 ms - -[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m13.399 ms - 29780[0m
+[0mGET /scripts/main.min.js [32m200 [0m7.207 ms - 11005[0m
+[0mGET / [32m200 [0m9.457 ms - 16149[0m
+[0mGET /images/bgtile.png [36m304 [0m6.139 ms - -[0m
+[0mGET /images/favicons/favicon-192x192.png [32m200 [0m8.961 ms - 13007[0m
+[0mGET /images/favicons/apple-touch-icon-180x180.png [36m304 [0m5.988 ms - -[0m
+Application available at port: 3000
+validating user
+[0mGET /files/ [32m200 [0m123.881 ms - 5222[0m
+validating user
+[0mGET /files/ [32m200 [0m17.412 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m49.106 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m56.553 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m38.598 ms - 1001[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m47.410 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m46.780 ms - 4843[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m46.332 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m17.496 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m26.127 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m17.955 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m44.259 ms - 1903[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/music/06 Mother Superior.mp3
+[0mGET /files/download_files?file=/music/06%20Mother%20Superior.mp3 [32m200 [0m31.737 ms - 6373186[0m
+Application available at port: 3000
+validating user
+[0mGET /files/ [32m200 [0m124.309 ms - 5222[0m
+validating user
+[0mGET /files/ [32m200 [0m18.923 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m44.297 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m48.521 ms - 1001[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m26.644 ms - 1736[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m25.030 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m31.545 ms - 4843[0m
+[0mGET /files/scripts/common.js [32m200 [0m26.846 ms - 1687[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m34.132 ms - 100900[0m
+[0mGET /files/scripts/upload.js [32m200 [0m23.266 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m31.145 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m51.550 ms - 1903[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/documents/vim-commands.txt
+[0mGET /files/download_files?file=/documents/vim-commands.txt [32m200 [0m33.617 ms - 907[0m
+[0mGET / [32m200 [0m23.415 ms - 16149[0m
+[0mGET /images/bgtile.png [36m304 [0m9.684 ms - -[0m
+[0mGET /images/favicons/apple-touch-icon-180x180.png [36m304 [0m4.603 ms - -[0m
+[0mGET /images/favicons/favicon-192x192.png [32m200 [0m19.400 ms - 13007[0m
+[0mGET / [32m200 [0m13.320 ms - 16149[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m22.048 ms - 15831[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m11.651 ms - 42839[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m9.285 ms - 7345[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m16.150 ms - 44715[0m
+[0mGET /scripts/server_config.min.js [36m304 [0m21.324 ms - -[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m30.727 ms - 10173[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m31.130 ms - 29780[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m14.588 ms - 3406[0m
+[0mGET /scripts/main.min.js [32m200 [0m14.698 ms - 11005[0m
+[0mGET /images/bgtile.png [36m304 [0m1.790 ms - -[0m
+validating user
+[0mGET /files/ [32m200 [0m14.593 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m36.530 ms - 11525[0m
+[0mGET /files/styles/fserve.css [32m200 [0m35.812 ms - 1001[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m23.359 ms - 1736[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m31.306 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m16.171 ms - 4843[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m18.608 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m6.027 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m8.653 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [36m304 [0m10.673 ms - -[0m
+[0mGET /files/files_list [36m304 [0m26.648 ms - -[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/pictures/application.png
+[0mGET /files/download_files?file=/pictures/application.png [32m200 [0m17.215 ms - 208992[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/pictures/application.png
+[0mGET /files/download_files?file=/pictures/application.png [32m200 [0m9.319 ms - 208992[0m
+validating user
+[0mGET /files/ [32m200 [0m13.058 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m4.080 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m3.723 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m3.713 ms - 1001[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m4.523 ms - 100900[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m6.548 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m3.895 ms - 4843[0m
+[0mGET /files/scripts/common.js [32m200 [0m3.865 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m3.850 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [36m304 [0m9.134 ms - -[0m
+[0mGET /files/files_list [36m304 [0m34.123 ms - -[0m
+[0mGET /video/ [32m200 [0m45.506 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m8.697 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m9.407 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m7.883 ms - 1136[0m
+[0mGET /video/images/bgtile.png [36m304 [0m5.936 ms - -[0m
+[0mGET /video/video_list [36m304 [0m44.489 ms - -[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m39.392 ms - 65537[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m39.503 ms - 120899012[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m10.148 ms - 50628[0m
+[0mGET /video/videos/roman-walking.mp4 [36m304 [0m2.282 ms - -[0m
+[0mGET /video/videos/roman-walking.mp4 [32m206 [0m3.539 ms - 120642768[0m
+[0mGET /video/ [32m200 [0m10.409 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m13.752 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m21.351 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m12.653 ms - 1136[0m
+[0mGET /video/ [32m200 [0m9.476 ms - 2629[0m
+[0mGET /video/video_list [36m304 [0m22.789 ms - -[0m
+[0mGET /video/images/bgtile.png [36m304 [0m15.027 ms - -[0m
+[0mGET /video/favicon.ico [32m200 [0m9.298 ms - 32038[0m
+validating user
+[0mGET /files/ [32m200 [0m10.395 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m11.424 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m29.844 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m39.157 ms - 1001[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m38.458 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m39.132 ms - 4843[0m
+[0mGET /files/scripts/common.js [32m200 [0m26.279 ms - 1687[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m39.871 ms - 100900[0m
+[0mGET /files/scripts/upload.js [32m200 [0m4.844 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m8.932 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m23.538 ms - 1903[0m
+validating user
+[0mGET /files/ [32m200 [0m10.255 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m6.503 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m22.748 ms - 1736[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m28.245 ms - 3038[0m
+[0mGET /files/styles/fserve.css [32m200 [0m28.905 ms - 1001[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m27.977 ms - 4843[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m28.857 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m28.078 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m13.092 ms - 1389[0m
+validating user
+[0mGET /files/files_list [32m200 [0m20.150 ms - 1903[0m
+[0mGET /files/images/bgtile.png [32m200 [0m11.602 ms - 1427[0m
+validating user
+[0mGET /files/ [32m200 [0m16.165 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m4.307 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m16.960 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m18.302 ms - 1001[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m17.467 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m17.571 ms - 4843[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m18.995 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m17.412 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m3.679 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [32m200 [0m13.975 ms - 1427[0m
+[0mGET /files/files_list [32m200 [0m25.344 ms - 1903[0m
+validating user
+[0mGET /files/favicon.ico [33m404 [0m11.191 ms - 46[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/pictures/application.png
+[0mGET /files/download_files?file=/pictures/application.png [32m200 [0m7.519 ms - 208992[0m
+validating user
+/home/csuser/Applications/cpk-local/private/files/dir/videos/Coheed_Live/20151017_215747.mp4
+[0mGET /files/download_files?file=/videos/Coheed_Live/20151017_215747.mp4 [32m200 [0m16.984 ms - 168131365[0m
+[0mGET /video/ [32m200 [0m16.036 ms - 2629[0m
+[0mGET /video/styles/wrapper.css [32m200 [0m10.855 ms - 11525[0m
+[0mGET /video/styles/comfortaa.css [32m200 [0m16.355 ms - 1736[0m
+[0mGET /video/scripts/common.js [32m200 [0m3.592 ms - 1136[0m
+[0mGET /video/video_list [32m200 [0m118.580 ms - 1029[0m
+[0mGET /video/images/bgtile.png [32m200 [0m8.869 ms - 1427[0m
+[0mGET /video/favicon.ico [32m200 [0m3.128 ms - 32038[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m9.806 ms - 65614695[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m17.953 ms - 45927[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [36m304 [0m1.872 ms - -[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m4.087 ms - 65524444[0m
+[0mGET /video/videos/Coheed_Live/20151017_222423.mp4 [32m206 [0m3.838 ms - 871[0m
+validating user
+uploading video(s)
+[0mPOST /files/upload [32m200 [0m92.109 ms - 41[0m
+[0mGET / [32m200 [0m18.373 ms - 16149[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m4.063 ms - 15831[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m4.077 ms - 42839[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m26.032 ms - 7345[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m24.612 ms - 10173[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m16.526 ms - 29780[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m17.582 ms - 44715[0m
+[0mGET /scripts/server_config.min.js [32m200 [0m27.451 ms - 58[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m3.977 ms - 3406[0m
+[0mGET /scripts/main.min.js [32m200 [0m4.243 ms - 11005[0m
+[0mGET /images/bgtile.png [32m200 [0m22.610 ms - 5265[0m
+[0mGET /images/favicons/favicon-32x32.png [32m200 [0m10.950 ms - 1443[0m
+[0mGET /images/favicons/favicon-16x16.png [32m200 [0m11.109 ms - 692[0m
+[0mGET /images/favicons/favicon-96x96.png [32m200 [0m8.328 ms - 5295[0m
+[0mGET /images/favicons/favicon-160x160.png [32m200 [0m7.103 ms - 10181[0m
+[0mGET /images/favicons/favicon-192x192.png [32m200 [0m2.616 ms - 13007[0m
+[0mGET /images/favicons/favicon.ico [32m200 [0m7.156 ms - 15086[0m
+[0mGET / [32m200 [0m10.680 ms - 16149[0m
+[0mGET /styles/jquery.mCustomScrollbar.min.css [32m200 [0m10.925 ms - 42839[0m
+[0mGET /styles/wrapper.min.css [32m200 [0m14.393 ms - 15831[0m
+[0mGET /styles/cpk_framework.css [32m200 [0m14.566 ms - 7345[0m
+[0mGET /scripts/server_config.min.js [36m304 [0m2.789 ms - -[0m
+[0mGET /scripts/simplyScroll.min.js [32m200 [0m21.873 ms - 10173[0m
+[0mGET /scripts/jquery.mCustomScrollbar.min.js [32m200 [0m21.483 ms - 44715[0m
+[0mGET /scripts/cpk_framework.min.js [32m200 [0m11.651 ms - 29780[0m
+[0mGET /scripts/sockets.min.js [32m200 [0m8.694 ms - 3406[0m
+[0mGET /scripts/main.min.js [32m200 [0m4.007 ms - 11005[0m
+[0mGET /images/bgtile.png [36m304 [0m1.823 ms - -[0m
+[0mGET /images/favicons/favicon-32x32.png [36m304 [0m1.652 ms - -[0m
+[0mGET /images/favicons/favicon-16x16.png [36m304 [0m2.009 ms - -[0m
+[0mGET /images/favicons/favicon-96x96.png [36m304 [0m1.870 ms - -[0m
+[0mGET /images/favicons/favicon-160x160.png [36m304 [0m1.814 ms - -[0m
+[0mGET /images/favicons/favicon-192x192.png [36m304 [0m1.815 ms - -[0m
+validating user
+[0mGET /files/ [32m200 [0m13.808 ms - 5222[0m
+[0mGET /files/styles/wrapper.css [32m200 [0m6.270 ms - 11525[0m
+[0mGET /files/styles/comfortaa.css [32m200 [0m25.369 ms - 1736[0m
+[0mGET /files/styles/fserve.css [32m200 [0m23.117 ms - 1001[0m
+[0mGET /files/scripts/hb_extensions.js [32m200 [0m22.757 ms - 3038[0m
+[0mGET /files/scripts/fserve.js [32m200 [0m23.083 ms - 4843[0m
+[0mGET /files/scripts/handlebars.js [32m200 [0m23.557 ms - 100900[0m
+[0mGET /files/scripts/common.js [32m200 [0m17.553 ms - 1687[0m
+[0mGET /files/scripts/upload.js [32m200 [0m4.014 ms - 1389[0m
+validating user
+[0mGET /files/images/bgtile.png [36m304 [0m2.656 ms - -[0m
+[0mGET /files/files_list [32m200 [0m18.886 ms - 1938[0m
+Application available at port: 3000
+[0mGET /pictures/ [32m200 [0m108.563 ms - 1889[0m
+[0mGET /pictures/scripts/common.js [36m304 [0m12.789 ms - -[0m
+[0mGET /pictures/styles/wrapper.css [32m200 [0m65.973 ms - 11525[0m
+[0mGET /pictures/styles/comfortaa.css [32m200 [0m51.231 ms - 1736[0m
+[0mGET /pictures/images/bgtile.png [36m304 [0m6.684 ms - -[0m
