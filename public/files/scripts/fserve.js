@@ -190,7 +190,7 @@ var fserve = {
 	},
 	download_files: function() {
 		var items = fserve.selected_files;
-		if (items.length > 0) {
+		if (items.length > 1) {
 			alert('Only 1 file at a time allowed for downloads');
 		}
 		var rt = fserve.current_path + '/';
