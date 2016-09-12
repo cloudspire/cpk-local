@@ -4,6 +4,7 @@ $(document).ready(function() {
 		common.api_url = common.api_url + "/files";
 	}
 	fserve.init();
+	select_manager.init();
 	$(".aside_link").click(function(event) {
 		common.change_page(event);
 	});
@@ -26,6 +27,46 @@ var common = {
 		$('div[cpk-page="' + pg + '"]').show();
 		if (override == null || !override) {
 			common.toggle_aside();
+		}
+	}
+}
+
+var select_manager = {
+	cntl_enabled: false,
+	init: function() {
+		$("body").keydown(function(event) {
+			if (event.which == 17) {
+				select_manager.cntl_enabled = true;
+			}
+		});
+		$("body").keyup(function(event) {
+			if (event.which == 17) {
+				select_manager.cntl_enabled = false;
+			}
+		});
+	},
+	select_file: function(target) {
+		var block = $(target).closest('.icon-block');
+		if (this.cntl_enabled) {
+			this.multiple_select(block);
+			return true;
+		} else {
+			this.single_select(block);
+			return false;
+		}
+	},
+	single_select: function(target) {
+		var selected = target.hasClass('selected_block');
+		$('.icon-block').removeClass('selected_block');
+		if (!selected) {
+			target.addClass('selected_block');
+		}
+	},
+	multiple_select: function(target) {
+		if (target.hasClass('selected_block')) {
+			target.removeClass('selected_block');
+		} else {
+			target.addClass('selected_block');
 		}
 	}
 }

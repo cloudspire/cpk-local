@@ -24,9 +24,7 @@ router.get('/', function(req, res) {
 			finished();
 		} else {
 			tree.forEach(function(file, index) {
-				if (file.indexOf('.') != -1) {
-					files.push(file.replace(/\\/g, '/').replace('private/files/dir/', ''));
-				}
+				files.push(file.replace(/\\/g, '/').replace('private/files/dir/', ''));
 			});
 			finished();
 		}

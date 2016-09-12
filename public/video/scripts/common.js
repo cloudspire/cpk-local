@@ -28,10 +28,13 @@ var common = {
 	toggle_aside: function() {
 		$("#cpk_aside").toggle('slide');
 	},
-	change_page: function(event) {
+	change_page: function(event, override) {
 		var page = $(event.currentTarget).attr('link-page');
 		$(".full-page").hide();
 		$('div[cpk-page="' + page + '"]').show();
+		if (override == null || !override) {
+			common.toggle_aside();
+		}
 	},
 	change_video(new_src) {
 		var player = document.getElementById('vid_player');

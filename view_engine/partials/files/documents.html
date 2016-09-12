@@ -5,6 +5,10 @@
 		clear: both; 
 		text-align: center;
 		color: white;
+		padding-top: 15px;
+	}
+	.icon-block {
+		height: 125px;
 	}
 	.fa-folder {
 		color: #388989;
@@ -12,12 +16,15 @@
 	.fa-file {
 		color: white;
 	}
+	.selected_block {
+		background-color: blue;
+	}
 </style>
 <div class="container" style="margin-top: 25px;">
 	<div class="row">
 		{{#each folders}}
-			<div class="col-lg-2 col-md-4 col-sm-6">
-				<div style="height: 150px;">
+			<div class="col-lg-2 col-md-3 col-sm-4" icon-file="{{this}}">
+				<div class="icon-block">
 					<div class="icon-row">
 						<i class="fa fa-folder fa-3x" name="{{this}}"></i>
 					</div>
@@ -28,8 +35,8 @@
 			</div>
 		{{/each}}
 		{{#each files}}
-			<div class="col-lg-2 col-md-4 col-sm-6">
-				<div style="height: 150px;">
+			<div class="col-lg-2 col-md-3 col-sm-4" icon-file="{{this}}">
+				<div class="icon-block">
 					<div class="icon-row">
 						<i class="fa fa-file-o fa-3x" name="{{this}}"></i>
 					</div>

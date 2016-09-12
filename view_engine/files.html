@@ -5,19 +5,40 @@
 	<%- partials.meta %>
 </head>
 <body>
+	<style>
+	.icon_container {
+		height: 75px; 
+		border-bottom: 1px solid white;
+	}
+	@media(max-width: 450px) {
+		#lbl_page_container, #icon_list_container {
+			width: 100%;
+			text-align: center;
+		}
+		.icon_container {
+			height: 125px;
+		}
+	}
+	</style>
 	<%- partials.header %>
 	<%- partials.aside %>
-	<div class="container" style="height: 75px; border-bottom: 1px solid white;">
+	<div class="container icon_container">
 		<div class="row" style="margin: 15px 0px;">
-			<div class="col-sm-6">
-				<div class="pull-left">
+			<div class="col-md-6">
+				<div id="lbl_page_container" class="pull-left">
 					<h2 id="lbl_page" style="color: white; margin-top: 0px;">videos</h2>
 				</div>
 			</div>
-			<div class="col-sm-6">
-				<div class="pull-right">	
-					<button class="btn folder-btn" type="button">New Folder</button>
-					<button class="btn upload-btn" type="button">Upload Files</button>	
+			<div class="col-md-6">
+				<div id="icon_list_container" class="pull-right">	
+					<button class="btn delete-btn" type="button" cpk-flag="when_selected" style="display: none;" onclick="fserve.delete_files();">
+						<i class="fa fa-times"></i>
+					</button>
+					<button class="btn download-btn" type="button" cpk-flag="when_selected" style="display: none;" onclick="fserve.download_files();">
+						<i class="fa fa-download"></i>
+					</button>
+					<button class="btn folder-btn" type="button"><i class="fa fa-plus"></i></button>
+					<button class="btn upload-btn" type="button"><i class="fa fa-upload"></i></button>
 				</div>
 			</div>
 		</div>

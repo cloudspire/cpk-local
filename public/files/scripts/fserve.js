@@ -4,6 +4,7 @@ var fserve = {
 	directory: {},
 	current_dir: "videos",
 	current_path: "/videos",
+	selected_files: [],
 	init: function() {
 		$.ajax({
 			url: common.api_url + '/files_list',
@@ -41,7 +42,9 @@ var fserve = {
 				if (dir['_files_'] == null) {
 					dir['_files_'] = [];
 				}
-				dir['_files_'].push(fname);
+				if (fname != "") {
+					dir['_files_'].push(fname);
+				}
 			}
 		}
 		var stp = 1;
@@ -62,6 +65,7 @@ var fserve = {
 			folders: folders
 		});
 		fserve.register_buttons();
+		fserve.selected_files = []
 	},
 	render_view: function(data) {
 		var html = compileTemplate(fserve.html, data);
@@ -79,7 +83,27 @@ var fserve = {
 		});
 		$('.fa-file-o').click(function(event) {
 			var name = $(event.currentTarget).attr('name');
-
+			var multiple = select_manager.select_file(event.currentTarget);
+			var selected = fserve.toggle_file_buttons();
+			if (multiple) {
+				var index = fserve.selected_files.indexOf(name);
+				if (index == -1) {
+					fserve.selected_files.push(name);
+				} else {					
+					fserve.selected_files.splice(index, 1);
+				}
+			} else {
+				if (selected) {
+					fserve.selected_files = [];
+					fserve.selected_files.push(name);
+				} else {
+					fserve.selected_files = [];
+				}
+			}
+		});
+		$('.download-btn').click(function(event) {
+			var test = fserve.selected_files;
+			var stp = "";
 		});
 	},
 	get_directory: function() {
@@ -107,7 +131,7 @@ var fserve = {
 	},
 	insert_folder: function(folder) {
 		var dir = fserve.get_directory();
-		dir[folder] = {};
+		dir[folder] = {'...': {}};
 		fserve.load_dir();
 	},
 	insert_files: function(files) {
@@ -119,5 +143,50 @@ var fserve = {
 			dir['_files_'].push(files[i]);
 		}
 		fserve.load_dir();
+	},
+	toggle_file_buttons() {
+		if ($(".selected_block").length > 0) {
+			$('button[cpk-flag="when_selected"]').show();
+			return true;
+		} else {
+			$('button[cpk-flag="when_selected"]').hide();
+			return false;
+		}
+	},
+	delete_files: function() {
+		$.ajax({
+			url: common.api_url + '/delete_files',
+			type: 'POST',
+			data: {
+				files: fserve.selected_files,
+				path: fserve.current_path
+			},
+			success: function(data){
+				var items = fserve.selected_files;
+				var directory = fserve.get_directory();
+				var dir_files = directory['_files_'];
+				var file, indexes = [];
+				for(var i = 0; i < items.length; i++) {
+					file = $('div[icon-file="' + items[i] + '"]').remove();
+					indexes.push(dir_files.indexOf(items[i]));
+				}
+				for (var i = 0; i < indexes.length; i++) {
+					dir_files.splice(indexes[i], 1);
+				}
+			},
+			error: function(data) {
+				console.error(data.responseText);
+			}
+		});
+	},
+	download_files: function() {
+		var items = fserve.selected_files;
+		var rt = fserve.current_path + '/';
+		for (var i = 0; i < items.length; i++) {
+			fserve.download_file(rt + items[i]);
+		}
+	},
+	download_file: function(file) {
+		window.open(common.api_url + '/download_files?file=' + file);
 	}
 }

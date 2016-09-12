@@ -38,6 +38,8 @@ var video_server = require('./routes/video/video');
 var video_list = require('./routes/video/video_list');
 var cpk_upload = require('./routes/files/upload');
 var new_folder = require('./routes/files/new_folder');
+var delete_files = require('./routes/files/delete_files');
+var download_files = require('./routes/files/download_files');
 
 //Route Paths to Middleware
 app.use('/', home);
@@ -47,6 +49,8 @@ app.use('/video', video_server);
 app.use('/video/video_list', video_list);
 app.use('/files/upload', cpk_upload);
 app.use('/files/new_folder', new_folder);
+app.use('/files/delete_files', delete_files);
+app.use('/files/download_files', download_files);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

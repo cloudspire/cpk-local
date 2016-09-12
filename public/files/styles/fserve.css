@@ -1,6 +1,6 @@
 .upload-btn {
   color: white;
-  background-color: #C12525;
+  background-color: #E0660F;
   border: none;
 }
 
@@ -9,7 +9,7 @@
 .upload-btn:active,
 .upload-btn.active {
   color: white !important;
-  background-color: #9C1F1F;
+  background-color: #CC5B0B;
   border: none;
 }
 
@@ -26,4 +26,38 @@
   color: white !important;
   background-color: #119640;
   border: none;
+}
+
+.download-btn {
+  color: white;
+  background-color: #BF34EC;
+  border: none;
+}
+
+.download-btn:hover,
+.download-btn:focus,
+.download-btn:active,
+.download-btn.active {
+  color: white !important;
+  background-color: #8B25AD;
+  border: none;
+}
+
+.delete-btn {
+  color: white;
+  background-color: #D9534F;
+  border: none;
+}
+
+.delete-btn:hover,
+.delete-btn:focus,
+.delete-btn:active,
+.delete-btn.active {
+  color: white !important;
+  background-color: #B94845;
+  border: none;
+}
+
+.upload-btn, .folder-btn, .download-btn {
+  margin-left: 7px;
 }
