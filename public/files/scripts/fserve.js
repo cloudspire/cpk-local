@@ -65,7 +65,8 @@ var fserve = {
 			folders: folders
 		});
 		fserve.register_buttons();
-		fserve.selected_files = []
+		fserve.selected_files = [];
+		fserve.toggle_file_buttons(false);
 	},
 	render_view: function(data) {
 		var html = compileTemplate(fserve.html, data);
@@ -144,13 +145,21 @@ var fserve = {
 		}
 		fserve.load_dir();
 	},
-	toggle_file_buttons() {
-		if ($(".selected_block").length > 0) {
-			$('button[cpk-flag="when_selected"]').show();
-			return true;
+	toggle_file_buttons(override) {
+		if (override != null) {
+			if (override) {
+				$('button[cpk-flag="when_selected"]').show();
+			} else {
+				$('button[cpk-flag="when_selected"]').hide();
+			}
 		} else {
-			$('button[cpk-flag="when_selected"]').hide();
-			return false;
+			if ($(".selected_block").length > 0) {
+				$('button[cpk-flag="when_selected"]').show();
+				return true;
+			} else {
+				$('button[cpk-flag="when_selected"]').hide();
+				return false;
+			}
 		}
 	},
 	delete_files: function() {
@@ -181,12 +190,11 @@ var fserve = {
 	},
 	download_files: function() {
 		var items = fserve.selected_files;
-		var rt = fserve.current_path + '/';
-		for (var i = 0; i < items.length; i++) {
-			fserve.download_file(rt + items[i]);
+		if (items.length > 0) {
+			alert('Only 1 file at a time allowed for downloads');
 		}
-	},
-	download_file: function(file) {
+		var rt = fserve.current_path + '/';
+		var file = rt + items[0];
 		window.open(common.api_url + '/download_files?file=' + file);
 	}
 }
