@@ -35,7 +35,9 @@ var music_player = {
 		music_player.player.on("ready", function() {
 			$("#waveform_loader").hide();
 		});
-		music_player.player.load('tracks/06 Mother Superior.mp3');
+		var tmp = $(".tracklist_row")[0];
+		var name = $("span", tmp).text();
+		music_player.player.load(name);
 		var slider = document.querySelector('#slider');
 		slider.oninput = function () {
 		  	var zoomLevel = Number(slider.value);
