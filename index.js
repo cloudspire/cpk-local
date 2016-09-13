@@ -42,7 +42,8 @@ var delete_files = require('./routes/files/delete_files');
 var download_files = require('./routes/files/download_files');
 var pictures = require('./routes/pictures/pictures');
 var pictures_list = require('./routes/pictures/pictures_list');
-
+var music = require('./routes/music/music');
+var music_list = require('./routes/music/music_list');
 
 //Route Paths to Middleware
 app.use('/', home);
@@ -56,6 +57,8 @@ app.use('/files/delete_files', delete_files);
 app.use('/files/download_files', download_files);
 app.use('/pictures', pictures);
 app.use('/pictures/pictures_list', pictures_list);
+app.use('/music', music);
+app.use('/music/music_list', music_list);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

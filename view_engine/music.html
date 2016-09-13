@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CPK Music | Stream music from your hard drive!</title>
+	<%- partials.meta %>
+</head>
+<body>
+	<%- partials.header %>
+	<style type="text/css">
+		.player_icon {
+			cursor: pointer;
+			color: white;
+		}
+	</style>
+	<div style="text-align: center;">
+		<div id="waveform_container">
+			<div id="waveform"></div>
+			<div style="text-align: center">
+				<p class="row" style="margin-top: 40px;">
+				    <div class="col-xs-1 player_icon" onclick="music_player.player.play()">
+				      	<i class="fa fa-play"></i>
+				    </div>
+				    <div class="col-xs-1 player_icon" onclick="music_player.player.pause()">
+				      	<i class="fa fa-pause"></i>
+				    </div>
+				    <div class="col-xs-9">
+				      	<input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
+				    </div>
+				    <div class="col-xs-1">
+				    	<i id="waveform_loader" class="fa fa-spinner fa-spin" style="color: white;"></i>
+				    </div>
+				</p>
+			</div>
+		</div>
+		<div id="mp_container" class="container">
+			
+		</div>
+	</div>
+</body>
+</html>
