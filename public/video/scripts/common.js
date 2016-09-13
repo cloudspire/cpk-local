@@ -11,7 +11,8 @@ $(document).ready(function() {
 			$(".vidlist_row").click(function(event) {
 				var lnk = $(event.currentTarget).find('span').text();
 				common.change_video(lnk);
-				$("#lnk_vid_player").click();
+				$(".full-page").hide();
+				$('div[cpk-page="video_player"]').show();
 			});
 		},
 		error: function(err) {

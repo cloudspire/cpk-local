@@ -8,7 +8,7 @@ $(document).ready(function() {
 		type: 'GET',
 		success: function(rslt) {
 			$("#piclist").html(rslt.html);
-			$("#gallery").unitegallery();
+			var api = $("#gallery").unitegallery();
 		},
 		error: function(err) {
 			console.error(err);
