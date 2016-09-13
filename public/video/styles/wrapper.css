@@ -343,6 +343,7 @@ video {
 	margin: 0 auto;
 	margin-top: 10px;
 	width: 650px;
+	max-height: 500px;
 }
 
 .video_container {
