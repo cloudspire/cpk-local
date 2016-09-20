@@ -3,7 +3,8 @@ var fs = require('fs');
 var path = require('path');
 
 var groups = {
-	partials: true
+	partials: true,
+	keys: true
 }
 
 module.exports.by_group = function(data, callback, error) {
@@ -18,6 +19,9 @@ module.exports.by_group = function(data, callback, error) {
 		switch (data.group) {
 			case "partials":
 				path = "./view_engine/partials/" + data.file;
+				break;
+			case "keys": 
+				path = "./keys/" + data.file;
 				break;
 			default:
 				break;

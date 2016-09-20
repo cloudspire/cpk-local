@@ -16,11 +16,13 @@
     "express": "^4.14.0",
     "formidable": "^1.0.17",
     "fs": "0.0.1-security",
+    "http": "0.0.0",
     "list-directory-contents": "0.0.3",
     "moment": "^2.14.1",
     "morgan": "^1.7.0",
     "node-cache": "^3.2.1",
     "path": "^0.12.7",
+    "request": "^2.75.0",
     "serve-favicon": "^2.3.0",
     "underscore": "^1.8.3"
   },

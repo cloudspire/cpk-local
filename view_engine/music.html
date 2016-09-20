@@ -6,13 +6,14 @@
 </head>
 <body>
 	<%- partials.header %>
+	<%- partials.aside %>
 	<style type="text/css">
 		.player_icon {
 			cursor: pointer;
 			color: white;
 		}
 	</style>
-	<div style="text-align: center;">
+	<div class="full-page" cpk-page="listen" style="text-align: center;">
 		<div id="waveform_container">
 			<div id="waveform"></div>
 			<div style="text-align: center">
@@ -33,6 +34,11 @@
 			</div>
 		</div>
 		<div id="mp_container" class="container">
+			
+		</div>
+	</div>
+	<div class="full-page" cpk-page="download" style="display: none">
+		<div id="search_results">
 			
 		</div>
 	</div>

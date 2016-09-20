@@ -123,7 +123,7 @@ module.exports.music_partials = function(callback, error) {
 		callback(cached);
 	} else {
 		var partials = {}, err = [];
-		var finished = __.after(2, function() {
+		var finished = __.after(3, function() {
 			if (err.length > 0) {
 				error(err);
 			} else {
@@ -143,6 +143,13 @@ module.exports.music_partials = function(callback, error) {
 		});
 		getfile.by_group({group: 'partials', file: 'music/common_ref.html'}, function(meta) {
 			partials['meta'] = meta;
+			finished();
+		}, function(get_err) {
+			err.push(get_err);
+			finished();
+		});
+		getfile.by_group({group: 'partials', file: 'music/aside.html'}, function(meta) {
+			partials['aside'] = meta;
 			finished();
 		}, function(get_err) {
 			err.push(get_err);
