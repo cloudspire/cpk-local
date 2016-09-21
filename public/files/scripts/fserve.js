@@ -10,7 +10,14 @@ var fserve = {
 			url: common.api_url + '/files_list',
 			type: 'GET',
 			success: function(data){
-				fserve.html = data.html;
+				fserve.html = data.html;				
+				$('.folder-btn').on('click', function () {
+		    		toggle_mdl_new_folder();
+				});		
+				$('.download-btn').click(function(event) {
+					var test = fserve.selected_files;
+					var stp = "";
+				});
 			 	fserve.load(data.files);
 			 	fserve.load_dir();
 			},
@@ -102,13 +109,6 @@ var fserve = {
 					fserve.selected_files = [];
 				}
 			}
-		});
-		$('.folder-btn').on('click', function () {
-    		toggle_mdl_new_folder();
-		});		
-		$('.download-btn').click(function(event) {
-			var test = fserve.selected_files;
-			var stp = "";
 		});
 	},
 	register_drag_drop: function() {
