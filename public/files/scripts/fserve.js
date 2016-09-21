@@ -151,7 +151,7 @@ var fserve = {
 	},
 	insert_folder: function(folder) {
 		var dir = fserve.get_directory();
-		dir[folder] = {'...': {}};
+		dir[folder] = {'...': {}, '_files_': []};
 		fserve.load_dir();
 	},
 	insert_files: function(files) {
