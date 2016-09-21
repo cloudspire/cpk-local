@@ -89,13 +89,14 @@ var common = {
 		});
 	},
 	download_song: function(id, title) {
+		$(".full-page").hide();
+		$('div[cpk-page="processing"]').show();
 		$.ajax({
 			type: 'GET',
 			url: "http://www.youtubeinmp3.com/fetch/?format=JSON&video=http://www.youtube.com/watch?v=" + id,
 			success: function(rslt) {
 				rslt = JSON.parse(rslt);
 				if (rslt.link != null) {
-					alert(rslt.link);
 					$.ajax({
 						type: 'POST',
 						url: common.api_url + '/youtube/download',
@@ -104,18 +105,25 @@ var common = {
 							fname: title
 						},
 						success: function(rslt) {
-							common.add_song('tracks/' + title + '.mp3');
+							var clean_title = title.replace(/['"]+/g, '');
+							common.add_song('tracks/' + clean_title + '.mp3');
+							common.download_complete();
 						}, 
 						error: function(err) {
 							console.log(err);
+							alert('Error downloading song, please try again or find another version.');
+							common.download_complete();
 						}
 					});
 				} else {
 					alert('Video not available for download');
+					common.download_complete();
 				}
 			}, 
 			error: function(err) {
 				console.log(err);
+				alert('Error downloading song, please try again or find another version.');
+				common.download_complete();
 			}
 		});
 	},
@@ -128,8 +136,12 @@ var common = {
 			music_player.change_track(title);
 		});
 		$("#mp_container").prepend(row);
+	},
+	download_complete: function() {
 		$(".full-page").hide();
 		$('div[cpk-page="listen"]').show();
+		var first = $($(".tracklist_row")[0]).attr('song-title');
+		music_player.change_track(first);
 	}
 }
 

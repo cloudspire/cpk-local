@@ -67,6 +67,7 @@ var fserve = {
 		fserve.register_buttons();
 		fserve.selected_files = [];
 		fserve.toggle_file_buttons(false);
+		fserve.register_drag_drop();
 	},
 	render_view: function(data) {
 		var html = compileTemplate(fserve.html, data);
@@ -74,7 +75,7 @@ var fserve = {
 		$('div[cpk-page="' + pg + '"]').html(html);
 	},
 	register_buttons: function() {
-		$('.fa-folder').click(function(event) {
+		$('.fa-folder').dblclick(function(event) {
 			var name = $(event.currentTarget).attr('name');
 			if (name == "...") {
 				fserve.step_back();
@@ -102,9 +103,27 @@ var fserve = {
 				}
 			}
 		});
+		$('.folder-btn').on('click', function () {
+    		toggle_mdl_new_folder();
+		});		
 		$('.download-btn').click(function(event) {
 			var test = fserve.selected_files;
 			var stp = "";
+		});
+	},
+	register_drag_drop: function() {
+		$(".drag_me").draggable({revert: "invalid"});
+		$(".drop_here").droppable({
+			classes: {
+				"ui-droppable-active": "ui-state-active",
+				"ui-droppable-hover": "ui-state-hover"
+			},
+			drop: function(event, ui) {
+				var from = $("i", ui.draggable).attr('name');
+				var to = $("i", this).attr('name');
+				var is_folder = $("i", ui.draggable).hasClass('fa-folder');
+				fserve.move_object(from, to, is_folder);
+			}
 		});
 	},
 	get_directory: function() {
@@ -196,5 +215,118 @@ var fserve = {
 		var rt = fserve.current_path + '/';
 		var file = rt + items[0];
 		window.open(common.api_url + '/download_files?file=' + file);
+	},
+	rename_file: function(old_name) {
+		var new_name = $("#in_new_name").val();
+		$.ajax({
+			url: common.api_url +  '/rename',
+			type: 'POST',
+			data: {
+				old_name: fserve.current_path + '/' + old_name,
+				new_name: fserve.current_path + '/' + new_name
+			},
+			success: function(data){
+			 	fserve.update_file_name(old_name, new_name);
+			 	toggle_mdl_rename_file(true);
+
+			},
+			error: function(data) {
+				console.error(data.responseText);
+			}
+		});
+	},
+	update_file_name: function(old_name, new_name) {
+		$('div[icon-file="' + old_name + '"]').attr('icon-file', new_name);
+		$('i[name="' + old_name + '"]').attr('name', new_name);
+		$('span[name="' + old_name + '"]').attr('name', new_name);
+		$('span[name="' + new_name + '"]').text(new_name);
+	},
+	move_object: function(obj, folder, is_folder) {
+		var old_path = fserve.current_path + '/' + obj;
+		var dest;
+		if (folder == "...") {
+			var tmp = fserve.current_path.split('/');
+			dest = "";
+			for (var i = 1; i < tmp.length - 1; i++) {
+				dest += "/" + tmp[i];
+			}
+			dest += ("/" + obj);
+		} else {
+			dest = fserve.current_path + "/" + folder + "/" + obj;
+		}
+		$.ajax({
+			url: common.api_url +  '/rename',
+			type: 'POST',
+			data: {
+				old_name: old_path,
+				new_name: dest
+			},
+			success: function(data){
+			 	fserve.post_move(obj, folder, is_folder);
+			},
+			error: function(data) {
+				console.error(data.responseText);
+			}
+		});
+	},
+	post_move: function(obj, folder, is_folder) {
+		var old_directory = fserve.get_directory();
+		if (folder != "...") {
+			fserve.step_into(folder);
+		} else {
+			fserve.step_back();
+		}
+		var new_directory = fserve.get_directory();
+		if (is_folder) {
+			var copy_obj = $.extend({}, old_directory[obj]);
+			delete old_directory[obj];
+			new_directory[obj] = copy_obj;
+		} else {
+			var index = old_directory['_files_'].indexOf(obj);
+			old_directory['_files_'].splice(index, 1);
+			new_directory['_files_'].push(obj);
+		}
+		fserve.load_dir();
+	}
+}
+
+function toggle_mdl_new_folder() {
+	$("#mdl_new_folder").modal('toggle');
+}
+
+function add_folder() {
+	var val = $("#in_new_folder").val();
+	$.ajax({
+		url: common.api_url +  '/new_folder',
+		type: 'POST',
+		data: {
+			path: fserve.current_path + '/' + val
+		},
+		success: function(data){
+		 	console.log('new folder created successfully!');
+		 	toggle_mdl_new_folder();
+		 	fserve.insert_folder(val);
+		},
+		error: function(data) {
+			console.error(data.responseText);
+		}
+	});
+}
+
+function toggle_mdl_rename_file(override) {
+	if (override == null) {
+		var selected = $(".selected_block");
+		if (selected.length == 1) {
+			var name = $("i", selected).attr('name');
+			$("#submit_rename").click(function() {
+				fserve.rename_file(name);
+			});
+			$("#in_new_name").val(name);
+			$("#mdl_rename_file").modal('toggle');
+		} else {
+			alert('You can only rename 1 file at a time.');
+		}
+	} else {
+		$("#mdl_rename_file").modal('toggle');
 	}
 }

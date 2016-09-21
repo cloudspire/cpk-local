@@ -31,7 +31,6 @@ module.exports.getVideosByKeywords = function(phrase, callback, error) {
 			var keywords = phrase.replace('/ /g', '+');
 			var url_prefix = 'https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&q=';
 			var url = url_prefix + keywords + '&key=' + js.youtube;
-			console.log(url);
 			request(url, function (err, response, body) {
 				if (!err && response.statusCode == 200) {
 					var rslt = JSON.parse(body);

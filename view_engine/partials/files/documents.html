@@ -28,24 +28,24 @@
 	<div class="row">
 		{{#each folders}}
 			<div class="col-lg-2 col-md-3 col-sm-4" icon-file="{{this}}">
-				<div class="icon-block">
+				<div class="icon-block drag_me drop_here">
 					<div class="icon-row">
 						<i class="fa fa-folder fa-3x" name="{{this}}"></i>
 					</div>
 					<div class="icon-row">
-						<span>{{this}}</span>
+						<span name="{{this}}">{{this}}</span>
 					</div>
 				</div>
 			</div>
 		{{/each}}
 		{{#each files}}
 			<div class="col-lg-2 col-md-3 col-sm-4" icon-file="{{this}}">
-				<div class="icon-block">
+				<div class="icon-block drag_me">
 					<div class="icon-row">
 						<i class="fa fa-file-o fa-3x" name="{{this}}"></i>
 					</div>
 					<div class="icon-row">
-						<span>{{this}}</span>
+						<span name="{{this}}">{{this}}</span>
 					</div>
 				</div>
 			</div>

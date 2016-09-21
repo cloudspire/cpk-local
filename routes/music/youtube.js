@@ -29,30 +29,23 @@ router.get('/keywords', function(req, res) {
 });
 
 router.post('/download', function(req, res) {
-	var req_url = req.body.to_url;
-	var DOWNLOAD_DIR = '/home/csuser/Applications/cpk-local/private/files/dir/music/';
+	var req_url = req.body.to_url;	
+	var curr_dir = __dirname;
+	var save_dir = curr_dir.replace('/routes/music', '') + '/private/files/dir/music/';
+	if (req.body.fname == null) {
 
-	var options = {
-	    host: url.parse(req_url).host,
-	    port: 80,
-	    path: url.parse(req_url).pathname
-	};
+	} else {
+		var file_name = req.body.fname.replace(/['"]+/g, '');
+		var new_file = save_dir + file_name + '.mp3';
 
-	var file_name = req.body.fname;
-	var new_file = DOWNLOAD_DIR + file_name + '.mp3';
-	
-	// console.log(req_url);
-	// console.log(file_name);
-	// res.json({});
-
-	request.get(req_url).on('error', function(err) {
-		console.log(err);
-		res.status(500).send('Error downloading file');
-	}).pipe(fs.createWriteStream(new_file)).on('finish', function() {
-		console.log(file_name + ' downloaded to ' + DOWNLOAD_DIR);
-		res.send('download complete');
-	});
-
+		request.get(req_url).on('error', function(err) {
+			console.dir(err);
+			res.status(500).send('Error downloading file');
+		}).pipe(fs.createWriteStream(new_file)).on('finish', function() {
+			console.log('Song downloaded: ' + new_file);
+			res.send('download complete');
+		});
+	}
 });
 
 module.exports = router;

@@ -58,6 +58,21 @@
   border: none;
 }
 
-.upload-btn, .folder-btn, .download-btn {
+.edit-btn {
+  color: white;
+  background-color: #CCB43D;
+  border: none;
+}
+
+.edit-btn:hover,
+.edit-btn:focus,
+.edit-btn:active,
+.edit-btn.active {
+  color: white !important;
+  background-color: #B7A23A;
+  border: none;
+}
+
+.upload-btn, .folder-btn, .download-btn, .edit-btn {
   margin-left: 7px;
 }

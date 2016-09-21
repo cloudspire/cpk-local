@@ -37,6 +37,9 @@
 					<button class="btn download-btn" type="button" cpk-flag="when_selected" style="display: none;" onclick="fserve.download_files();">
 						<i class="fa fa-download"></i>
 					</button>
+					<button class="btn edit-btn" type="button" cpk-flag="when_selected" style="display: none;" onclick="toggle_mdl_rename_file();">
+						<i class="fa fa-pencil"></i>
+					</button>
 					<button class="btn folder-btn" type="button"><i class="fa fa-plus"></i></button>
 					<button class="btn upload-btn" type="button"><i class="fa fa-upload"></i></button>
 				</div>
@@ -71,6 +74,25 @@
 				<div class="modal-footer">
 					<button class="btn btn-success" style="float: right;" onclick="add_folder();">Add</button>
 					<button class="btn btn-danger" style="float: right; margin-right: 10px;" onclick="toggle_mdl_new_folder();">Cancel</button>
+				</div>
+			</div>
+        </div>
+    </div>
+	<div class="modal" id="mdl_rename_file" role="dialog" style="display: none;">
+        <div class="modal-dialog" style="margin-top: 125px; background-color: black; border-radius: 6px;">
+			<div>
+				<div class="modal-header" style="color: white;">
+					Rename File
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label style="color: white;">Name:</label>
+						<input id="in_new_name" type="text" class="form-control">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-success" id="submit_rename" style="float: right;">Rename</button>
+					<button class="btn btn-danger" style="float: right; margin-right: 10px;" onclick="toggle_mdl_rename_file();">Cancel</button>
 				</div>
 			</div>
         </div>
