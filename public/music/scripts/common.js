@@ -141,12 +141,23 @@ var common = {
 		$(".full-page").hide();
 		$('div[cpk-page="listen"]').show();
 		var first = $($(".tracklist_row")[0]).attr('song-title');
+		common.reset_song_index();
 		music_player.change_track(first);
+	},
+	reset_song_index: function() {
+		$(".tracklist_row").each(function(i, row) {
+			$(row).attr('song-index', i);
+		});
 	}
 }
 
 var music_player = {
 	player: null,
+	muted: false,
+	shuffle: false,
+	continuous: false,
+	song_index: 0,
+	song_max: 0,
 	init: function() {
 		music_player.player = WaveSurfer.create({
   			container: '#waveform',
@@ -155,18 +166,75 @@ var music_player = {
 		});
 		music_player.player.on("ready", function() {
 			$("#waveform_loader").hide();
+			if (music_player.continuous) {
+				music_player.play();
+			}
 		});
+		music_player.player.on("finish", function() {
+			if (music_player.continuous) {
+				music_player.next_song();
+			} else {
+				$("#play-btn").removeClass('icon_selected');
+			}
+		});
+		music_player.song_max = $(".tracklist_row").length;
 		var tmp = $(".tracklist_row")[0];
 		var name = $("span", tmp).text();
 		music_player.player.load(name);
 		var slider = document.querySelector('#slider');
 		slider.oninput = function () {
-		  	var zoomLevel = Number(slider.value);
-		  	music_player.player.zoom(zoomLevel);
+		  	var vol = Number(slider.value) / 100;
+		  	music_player.player.setVolume(vol);
 		};
 	},
 	change_track: function(track) {
 		$("#waveform_loader").show();		
+		music_player.song_index = parseInt($('div[song-title="' + track + '"]').attr('song-index'));
 		music_player.player.load(track);
+	},
+	play: function() {
+		music_player.player.play();
+		$("#pause-btn").removeClass('icon_selected');
+		$("#play-btn").addClass('icon_selected');
+	},
+	pause: function() {
+		music_player.player.pause();
+		$("#play-btn").removeClass('icon_selected');
+		$("#pause-btn").addClass('icon_selected');
+	},
+	next_song: function() {
+		if (music_player.song_index < music_player.song_max - 1) {
+			music_player.song_index++;
+		} else {
+			music_player.song_index = 0;
+		}
+		var track = $('div[song-index="' + music_player.song_index + '"]').attr('song-title');
+		music_player.change_track(track);
+	},
+	toggle_mute: function() {
+		if (music_player.muted) {
+			$("#vol-btn").removeClass('fa-volume-off');
+			$("#vol-btn").addClass('fa-volume-up');
+			$("#vol-btn").removeClass('icon_selected');
+			music_player.muted = false;
+		} else {
+			$("#vol-btn").removeClass('fa-volume-up');
+			$("#vol-btn").addClass('fa-volume-off');
+			$("#vol-btn").addClass('icon_selected');
+			music_player.muted = true;
+		}
+		music_player.player.toggleMute();
+	},
+	toggle_shuffle: function() {
+
+	},
+	toggle_continuous: function() {
+		if (music_player.continuous) {
+			$("#continue-btn").removeClass('icon_selected');
+			music_player.continuous = false;
+		} else {
+			$("#continue-btn").addClass('icon_selected');
+			music_player.continuous = true;
+		}
 	}
 }
