@@ -41,7 +41,6 @@ module.exports.get_data = function(callback, error) {
 				} else {
 					var curr = arr.shift();
 					var info;
-					console.log('adding: "' + curr.path + '"" to database');
 					id3.read(curr.full_path, {
 						onSuccess: function(rslt) {
 							info = rslt.tags;
