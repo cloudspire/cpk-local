@@ -46,6 +46,7 @@ var pictures_list = require('./routes/pictures/pictures_list');
 var music = require('./routes/music/music');
 var music_list = require('./routes/music/music_list');
 var youtube = require('./routes/music/youtube');
+var song_map = require('./routes/music/song_map');
 
 //Route Paths to Middleware
 app.use('/', home);
@@ -63,6 +64,7 @@ app.use('/pictures/pictures_list', pictures_list);
 app.use('/music', music);
 app.use('/music/music_list', music_list);
 app.use('/music/youtube', youtube);
+app.use('/music/song_map', song_map);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -110,7 +112,19 @@ global.default_cache = new NodeCache();
 global.cache_flags = {
     partials: false
 }
+global.app_root_dir = String(__dirname);
 global.fs_root_dir = path.join(__dirname, '/private/files/dir');
+
+var jsondb = require('node-json-db');
+global.jsdb = {};
+global.jsdb.music = new jsondb('db_music', true, false);
+
+require('./controllers/song_map').get_data(function() {
+    console.log('songs have been mapped');
+}, function(err) {
+    console.log('error mapping songs:');
+    console.dir(err);
+})
 
 //THIS TELLS NODE TO EXPORT THIS MODULE. SINCE IT IS THE ROOT MODULE, IT WILL FUNCTION AS ENTRY POINT TO SERVER
 module.exports = app;

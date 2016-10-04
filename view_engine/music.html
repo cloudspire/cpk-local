@@ -26,17 +26,17 @@
 			<div id="waveform"></div>
 			<div style="text-align: center">
 				<p class="row" style="margin-top: 40px;">
-				    <div class="col-xs-1 player_icon" onclick="music_player.play()">
+				    <div class="col-xs-1 player_icon" onclick="music_player.play();">
 				      	<i id="play-btn" class="fa fa-play"></i>
 				    </div>
-				    <div class="col-xs-1 player_icon" onclick="music_player.pause()">
+				    <div class="col-xs-1 player_icon" onclick="music_player.pause();">
 				      	<i id="pause-btn" class="fa fa-pause"></i>
 				    </div>
 				    <div class="col-xs-1 player_icon" onclick="music_player.toggle_continuous();">
 				    	<i id="continue-btn" class="fa fa-refresh"></i>
 				    </div>
-				    <div class="col-xs-1 player_icon" onclick="music_player.toggle_shuffle();">
-				    	<i id="random-btn" style="display: none;" class="fa fa-random"></i>
+				    <div id="col_shuffle" class="col-xs-1 player_icon" style="display: none;" onclick="music_player.toggle_shuffle();">
+				    	<i id="random-btn" class="fa fa-random"></i>
 				    </div>
 				    <div class="col-xs-3">
 				    	
