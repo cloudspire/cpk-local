@@ -56,7 +56,7 @@ module.exports.get_data = function(callback, error) {
 							next(arr);
 						}, 
 						onError: function(err2) {
-							console.dir(err2);
+							//console.dir(err2);
 							next(arr);
 						}
 					});
