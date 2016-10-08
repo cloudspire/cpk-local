@@ -286,7 +286,7 @@ var music_player = {
 			music_player.current_song = track;
 			music_player.song_index++;
 			music_player.shuffle_index++;
-			$("#curr_song").text(common.remove_path(track));
+			$("#curr_song").text(common.remove_path(track.path));
 		}
 	},
 	toggle_mute: function() {
