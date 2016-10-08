@@ -3,10 +3,16 @@
 	tmp = tmp.split('/');
 	var name = tmp[tmp.length - 1];
 %>
+	<style type="text/css">
+		.song_row {
+			padding-top: 15px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	</style>
 	<div class="row tracklist_row" song-title="<%= tracks[keys[i]].path %>" song-index="<%= i%>">
-		<div class="col-xs-12" style="padding-top: 15px;">
-			<!-- <span><%= tracks[keys[i]].artist %> - <%= tracks[keys[i]].title %></span> -->
-			<!-- <span><%= tracks[keys[i]].path.replace('tracks/', '') %></span> -->
+		<div class="col-xs-12 song_row">
 			<span><%= name %></span>
 		</div>
 	</div>

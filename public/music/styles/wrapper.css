@@ -382,17 +382,6 @@ video {
 	margin: auto;
 }
 
-/*#waveform {
-	width: 100%;
-	height: 100px;
-	margin: 15px 0px;
-}*/
-
-/*#waveform {
-	width: 300px;
-	margin: 0 auto;
-}*/
-
 /*	Media Queries*/
 
 @media all and (min-width: 767px) {
