@@ -167,6 +167,10 @@ var common = {
 		$(".tracklist_row").each(function(i, row) {
 			$(row).attr('song-index', i);
 		});
+	},
+	remove_path: function(str) {
+		var tmp = str.split('/');
+		return tmp[tmp.length - 1];
 	}
 }
 
@@ -188,7 +192,9 @@ var music_player = {
 		music_player.player = WaveSurfer.create({
   			container: '#waveform',
   			waveColor: 'red',
-  			progressColor: 'purple'
+  			progressColor: 'purple',
+  			height: 65,
+  			hideScrollbar: true
 		});
 		music_player.player.on("ready", function() {
 			$("#waveform_loader").hide();
@@ -208,6 +214,7 @@ var music_player = {
 		var name = $(tmp).attr('song-title');
 		music_player.player.load(name);
 		music_player.current_song = music_player.song_map[name];
+		$("#curr_song").text(common.remove_path(name));
 		var slider = document.querySelector('#slider');
 		slider.oninput = function () {
 		  	var vol = Number(slider.value) / 100;
@@ -219,6 +226,7 @@ var music_player = {
 		music_player.player.load(track);
 		music_player.song_index = parseInt($('div[song-title="' + track + '"]').attr('song-index'));
 		music_player.current_song = music_player.song_map[track];
+		$("#curr_song").text(common.remove_path(track));
 	},
 	play: function() {
 		music_player.player.play();
@@ -278,6 +286,7 @@ var music_player = {
 			music_player.current_song = track;
 			music_player.song_index++;
 			music_player.shuffle_index++;
+			$("#curr_song").text(common.remove_path(track));
 		}
 	},
 	toggle_mute: function() {
