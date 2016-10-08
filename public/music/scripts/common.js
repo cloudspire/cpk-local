@@ -180,6 +180,8 @@ var music_player = {
 	song_max: 0,
 	current_song: null,
 	shuffle_list: [],
+	shuffle_history: [],
+	shuffle_index: 0,
 	shuffle_pending: false,
 	artist_dist: {},
 	init: function() {
@@ -228,6 +230,21 @@ var music_player = {
 		$("#play-btn").removeClass('icon_selected');
 		$("#pause-btn").addClass('icon_selected');
 	},
+	previous_song: function() {
+		if (music_player.song_index > 0) {
+			var track;
+			if (music_player.shuffle) {
+				music_player.shuffle_index--;
+				track = music_player.shuffle_history[music_player.shuffle_index];
+			} else {
+				music_player.song_index--;
+				track = $('div[song-index="' + music_player.song_index + '"]').attr('song-title');
+			}
+			music_player.change_track(track);
+		} else {
+			alert('Already at the start of the list.');
+		}
+	},
 	next_song: function() {
 		if (music_player.shuffle) {
 			music_player.random_song();
@@ -257,8 +274,10 @@ var music_player = {
 		} else {
 			$("#waveform_loader").show();
 			music_player.player.load(track.path);
+			music_player.shuffle_history.push(track.path);
 			music_player.current_song = track;
 			music_player.song_index++;
+			music_player.shuffle_index++;
 		}
 	},
 	toggle_mute: function() {
@@ -333,6 +352,8 @@ var music_player = {
 	        a[i - 1] = a[j];
 	        a[j] = x;
 	    }
+	    music_player.shuffle_history = [];
+	    music_player.shuffle_index = 0;
 	    if (Object.keys(dist).length > 1) {
 	    	music_player.shuffle_list = a;
 	    	return true;
