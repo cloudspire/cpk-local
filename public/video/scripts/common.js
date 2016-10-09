@@ -9,7 +9,7 @@ $(document).ready(function() {
 		success: function(rslt) {
 			$("#vidlist").html(rslt.html);
 			$(".vidlist_row").click(function(event) {
-				var lnk = $(event.currentTarget).find('span').text();
+				var lnk = $(event.currentTarget).attr('vid-title');
 				common.change_video(lnk);
 				$(".full-page").hide();
 				$('div[cpk-page="video_player"]').show();

@@ -1,7 +1,19 @@
-<% for (var i = 0; i < files.length; i++) { %>
-	<div class="row vidlist_row">
-		<div class="col-xs-12" style="padding-top: 15px;">
-			<span><%= files[i] %></span>
+<% for (var i = 0; i < files.length; i++) { 
+	var tmp = files[i].split('/');
+	var name = tmp[tmp.length - 1];
+%>
+	<style type="text/css">
+		.video_row {
+			padding-top: 15px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	</style>
+	<div class="row vidlist_row" vid-title="<%= files[i] %>">
+		<div class="col-xs-12 video_row">
+			<!-- <span><%= files[i] %></span> -->
+			<span><%= name %></span>
 		</div>
 	</div>
 <% } %>
