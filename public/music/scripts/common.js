@@ -194,7 +194,8 @@ var music_player = {
   			waveColor: 'red',
   			progressColor: 'purple',
   			height: 65,
-  			hideScrollbar: true
+  			hideScrollbar: true,
+  			barWidth: 2
 		});
 		music_player.player.on("ready", function() {
 			$("#waveform_loader").hide();
