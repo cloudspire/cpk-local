@@ -90,7 +90,11 @@ var fserve = {
 				fserve.step_into(name);
 			}
 		});
-		$('.fa-file-o').click(function(event) {
+		// $('.fa-folder').click(function(event) {
+		// 	var name = $(event.currentTarget).attr('name');
+		// 	select_manager.select_folder(event.currentTarget);
+		// });
+		$('.fa-file-o, .fa-folder').click(function(event) {
 			var name = $(event.currentTarget).attr('name');
 			var multiple = select_manager.select_file(event.currentTarget);
 			var selected = fserve.toggle_file_buttons();
@@ -167,17 +171,25 @@ var fserve = {
 	toggle_file_buttons(override) {
 		if (override != null) {
 			if (override) {
-				$('button[cpk-flag="when_selected"]').show();
+				$('button[cpk-flag="when_selected-all"]').show();
+				$('button[cpk-flag="when_selected-sngl"]').show();
 			} else {
-				$('button[cpk-flag="when_selected"]').hide();
+				$('button[cpk-flag="when_selected-all"]').hide();
+				$('button[cpk-flag="when_selected-sngl"]').hide();
 			}
 		} else {
-			if ($(".selected_block").length > 0) {
-				$('button[cpk-flag="when_selected"]').show();
+			if ($(".selected_block").length == 0) {
+				$('button[cpk-flag="when_selected-all"]').hide();
+				$('button[cpk-flag="when_selected-sngl"]').hide();
+				return false;
+			} else if ($(".selected_block").length > 1) {
+				$('button[cpk-flag="when_selected-all"]').show();
+				$('button[cpk-flag="when_selected-sngl"]').hide();
 				return true;
 			} else {
-				$('button[cpk-flag="when_selected"]').hide();
-				return false;
+				$('button[cpk-flag="when_selected-all"]').show();
+				$('button[cpk-flag="when_selected-sngl"]').show();
+				return true;
 			}
 		}
 	},
@@ -193,14 +205,20 @@ var fserve = {
 				var items = fserve.selected_files;
 				var directory = fserve.get_directory();
 				var dir_files = directory['_files_'];
-				var file, indexes = [];
+				var file, block_type, indexes = [];
 				for(var i = 0; i < items.length; i++) {
+					block_type = $('.icon-block', 'div[icon-file="' + items[i] + '"]').attr('block-type');
 					file = $('div[icon-file="' + items[i] + '"]').remove();
-					indexes.push(dir_files.indexOf(items[i]));
+					if (block_type == 'file') {
+						indexes.push(dir_files.indexOf(items[i]));
+					} else {
+						delete directory[items[i]];
+					}
 				}
 				for (var i = 0; i < indexes.length; i++) {
 					dir_files.splice(indexes[i], 1);
 				}
+				fserve.toggle_file_buttons(false);
 			},
 			error: function(data) {
 				console.error(data.responseText);
@@ -228,7 +246,6 @@ var fserve = {
 			success: function(data){
 			 	fserve.update_file_name(old_name, new_name);
 			 	toggle_mdl_rename_file(true);
-
 			},
 			error: function(data) {
 				console.error(data.responseText);
@@ -240,6 +257,20 @@ var fserve = {
 		$('i[name="' + old_name + '"]').attr('name', new_name);
 		$('span[name="' + old_name + '"]').attr('name', new_name);
 		$('span[name="' + new_name + '"]').text(new_name);
+		var dir = fserve.get_directory();
+		var found = false;
+		for (var i = 0; i < dir['_files_'].length; i++) {
+			if (dir['_files_'][i] == old_name) {
+				dir['_files_'][i] = new_name;
+				found = true;
+				break;
+			}
+		}
+		if (!found) {
+			dir[new_name] = $.extend({}, dir[old_name]);
+			delete dir[old_name];
+			var x = 1;
+		}
 	},
 	move_object: function(obj, folder, is_folder) {
 		var old_path = fserve.current_path + '/' + obj;

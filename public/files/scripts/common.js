@@ -46,6 +46,18 @@ var select_manager = {
 		});
 	},
 	select_file: function(target) {
+		//$('.icon-block[block-type="folder"]').removeClass('selected_block');
+		var block = $(target).closest('.icon-block');
+		if (this.cntl_enabled) {
+			this.multiple_select(block);
+			return true;
+		} else {
+			this.single_select(block);
+			return false;
+		}
+	},
+	select_folder: function(target) {
+		//$('.icon-block[block-type="file"]').removeClass('selected_block');
 		var block = $(target).closest('.icon-block');
 		if (this.cntl_enabled) {
 			this.multiple_select(block);

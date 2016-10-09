@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var fs = require('fs');
+var fs = require('fs-extra');
 var __ = require('underscore');
 
 router.post('/', function(req, res) {
@@ -21,6 +21,11 @@ router.post('/', function(req, res) {
 	}
 });
 
+router.post('/folder', function(req, res) {
+	//if (req.body.)
+	res.status(500).send('not implemented');
+});
+
 module.exports = router;
 
 function deleteFiles(files, path, rt, callback){
@@ -30,7 +35,7 @@ function deleteFiles(files, path, rt, callback){
    	});
    	for(var i = 0; i < files.length; i++) {
    		var file = rt + path + '/' + files[i];
-   		fs.unlink(file, function(err) {
+   		fs.remove(file, function(err) {
    			if (err) {
    				if (errs == null) {errs = []};
    				errs.push(err);
